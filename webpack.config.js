@@ -34,7 +34,7 @@ module.exports = {
                 exclude: /node_modules/
             },
             {
-                test: /\.geoJSON$/,
+                test: /\.geoJSON$/i,
                 type: 'asset/resource'
             }
         ]

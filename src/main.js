@@ -1,6 +1,6 @@
 import "./style.css";
 import "./reset.css";
-import "./assets/map.geoJSON"
+import "./assets/map.geojson";
 
 var map = L.map('map', {
   zoomControl: false

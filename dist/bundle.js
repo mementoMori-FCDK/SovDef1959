@@ -146,17 +146,17 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _reset_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./reset.css */ \"./src/reset.css\");\n/* harmony import */ var _assets_map_geoJSON__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/map.geoJSON */ \"./src/assets/map.geoJSON\");\n\n\n\n\nvar map = L.map('map', {\n  zoomControl: false\n}).setView([49.98964246591577, 36.23222351074219], 4);\n\nvar tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {\n  maxZoom: 19,\n  attribution: '&copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a>'\n}).addTo(map);\n\nloadJson();\n\nfunction loadJson() {\n  let xhr = new XMLHttpRequest();\n  xhr.open('GET', 'map.geojson');\n  xhr.setRequestHeader('Content-Type', 'application/json');\n  xhr.responseType = 'json';\n  xhr.onload = function() {\n    if (xhr.status !== 200) return\n    L.geoJSON(xhr.response).addTo(map);\n    console.log('check');\n  };\n  xhr.send();\n}\n\n\n//# sourceURL=webpack://sovdef1959/./src/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _reset_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./reset.css */ \"./src/reset.css\");\n/* harmony import */ var _assets_map_geojson__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/map.geojson */ \"./src/assets/map.geojson\");\n\n\n\n\nvar map = L.map('map', {\n  zoomControl: false\n}).setView([49.98964246591577, 36.23222351074219], 4);\n\nvar tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {\n  maxZoom: 19,\n  attribution: '&copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a>'\n}).addTo(map);\n\nloadJson();\n\nfunction loadJson() {\n  let xhr = new XMLHttpRequest();\n  xhr.open('GET', 'map.geojson');\n  xhr.setRequestHeader('Content-Type', 'application/json');\n  xhr.responseType = 'json';\n  xhr.onload = function() {\n    if (xhr.status !== 200) return\n    L.geoJSON(xhr.response).addTo(map);\n    console.log('check');\n  };\n  xhr.send();\n}\n\n\n//# sourceURL=webpack://sovdef1959/./src/main.js?");
 
 /***/ }),
 
-/***/ "./src/assets/map.geoJSON":
+/***/ "./src/assets/map.geojson":
 /*!********************************!*\
-  !*** ./src/assets/map.geoJSON ***!
+  !*** ./src/assets/map.geojson ***!
   \********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"map.geoJSON\";\n\n//# sourceURL=webpack://sovdef1959/./src/assets/map.geoJSON?");
+eval("module.exports = __webpack_require__.p + \"map.geojson\";\n\n//# sourceURL=webpack://sovdef1959/./src/assets/map.geojson?");
 
 /***/ })
 
