@@ -1,6 +1,7 @@
 import "./style.css";
 import "./reset.css";
 import "./assets/map.geojson";
+import React from "react";
 
 var map = L.map('map', {
   zoomControl: false
@@ -32,8 +33,9 @@ let regionsLayer = L.geoJSON(regionsJSON, {
     };
   },
   onEachFeature: function(feature, layer) {
-    let popup = L.popup()
-    layer.bindPopup(feature.properties.name);
+    let html = '<h1>' + feature.properties.name + '</h1>' + '</br>' +
+    '<input type="text">';
+    layer.bindPopup(html);
   }
 }).addTo(map);
 
