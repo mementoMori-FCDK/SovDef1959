@@ -19,6 +19,9 @@ module.exports = {
         hot: true,
         compress: true
     },
+    experiments: {
+        topLevelAwait: true
+    },
     plugins: [
         new HtmlWebpackPlugin({
             title: 'SovDef1959 projecto',
@@ -36,6 +39,16 @@ module.exports = {
             {
                 test: /\.geoJSON$/i,
                 type: 'asset/resource'
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env']
+                    }
+                }
             }
         ]
     }

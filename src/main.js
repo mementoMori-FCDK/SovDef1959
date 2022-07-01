@@ -11,17 +11,29 @@ var tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-loadJson();
+const loadRegions = async () => {
+  try{
+    const response = await fetch('/map.geojson', {
+      method: 'GET'
+    });
+    const data = await response.json();
+    return data;
+  }catch(error) {
+    console.log(error);
+  }
+};
 
-function loadJson() {
-  let xhr = new XMLHttpRequest();
-  xhr.open('GET', 'map.geojson');
-  xhr.setRequestHeader('Content-Type', 'application/json');
-  xhr.responseType = 'json';
-  xhr.onload = function() {
-    if (xhr.status !== 200) return
-    L.geoJSON(xhr.response).addTo(map);
-    console.log('check');
-  };
-  xhr.send();
-}
+let regionsJSON = await loadRegions().then(data => regionsJSON = data);
+let regionsLayer = L.geoJSON(regionsJSON, {
+  style: function(geoJsonFeature){
+    return {
+      color: '#87ceeb',
+      fillOpacity: 0.1
+    };
+  },
+  onEachFeature: function(feature, layer) {
+    let popup = L.popup()
+    layer.bindPopup(feature.properties.name);
+  }
+}).addTo(map);
+
