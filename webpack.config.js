@@ -41,6 +41,10 @@ module.exports = {
                 type: 'asset/resource'
             },
             {
+                test: /\.json$/i,
+                type: 'asset/resource'
+            },
+            {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: {

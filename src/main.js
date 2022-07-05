@@ -1,15 +1,15 @@
 import "./style.css";
 import "./reset.css";
 import "./assets/map.geojson";
-import React from "react";
+import "./assets/Kyiv.json";
 
 var map = L.map('map', {
   zoomControl: false
 }).setView([49.98964246591577, 36.23222351074219], 4);
 
-var tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+var tiles = L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png', {
   maxZoom: 19,
-  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
 }).addTo(map);
 
 const loadRegions = async () => {
@@ -24,6 +24,27 @@ const loadRegions = async () => {
   }
 };
 
+const loadProduction = async (ProdRegion) => {
+  try{
+    const response = await fetch(`/${ProdRegion}.json`);
+    console.log('check');
+    const data = await response.json();
+    console.log(data);
+    return data;
+  }catch(error) {
+    console.log(error);
+  }
+};
+
+function GenerateInfo(ProdRegion){
+  let table = document.createElement('table');
+  table.className = 'GeneratedTable';
+  document.getElementById('info').appendChild(table);
+  console.log(table);
+};
+
+GenerateInfo();
+
 let regionsJSON = await loadRegions().then(data => regionsJSON = data);
 let regionsLayer = L.geoJSON(regionsJSON, {
   style: function(geoJsonFeature){
@@ -33,9 +54,10 @@ let regionsLayer = L.geoJSON(regionsJSON, {
     };
   },
   onEachFeature: function(feature, layer) {
-    let html = '<h1>' + feature.properties.name + '</h1>' + '</br>' +
-    '<input type="text">';
+    let html = '<h1>' + feature.properties.name + ' Regional Economic Soviet' + '</h1>';
     layer.bindPopup(html);
+    layer.on('click', function(){
+      map.fitBounds(layer.getBounds());
+    })
   }
 }).addTo(map);
-
