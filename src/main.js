@@ -27,23 +27,48 @@ const loadRegions = async () => {
 const loadProduction = async (ProdRegion) => {
   try{
     const response = await fetch(`/${ProdRegion}.json`);
-    console.log('check');
     const data = await response.json();
-    console.log(data);
     return data;
   }catch(error) {
     console.log(error);
   }
 };
 
-function GenerateInfo(ProdRegion){
-  let table = document.createElement('table');
-  table.className = 'GeneratedTable';
-  document.getElementById('info').appendChild(table);
-  console.log(table);
+async function GenerateInfo(ProdRegion){
+  let arr = await loadProduction(ProdRegion).then(data => arr = data);
+  console.log(arr);
+  let row, table, col = undefined;
+  let headers = ['item', 'unit', 'quantity', 'consumer'];
+  table = document.getElementById('flex-table');
+  arr.forEach(element => {
+    row = document.createElement('div');
+    row.className = 'row';
+
+    col = document.createElement('div');
+    col.className = 'col item';
+    col.innerHTML = element.item;
+    row.appendChild(col);
+
+    col = document.createElement('div');
+    col.className = 'col';
+    col.innerHTML = element.unit;
+    row.appendChild(col);
+
+    col = document.createElement('div');
+    col.className = 'col';
+    col.innerHTML = element.quantity;
+    row.appendChild(col);
+
+    col = document.createElement('div');
+    col.className = 'col';
+    col.innerHTML = element.consumer;
+    row.appendChild(col);
+
+    table.appendChild(row);
+  });
 };
 
-GenerateInfo();
+GenerateInfo('Kyiv');
 
 let regionsJSON = await loadRegions().then(data => regionsJSON = data);
 let regionsLayer = L.geoJSON(regionsJSON, {

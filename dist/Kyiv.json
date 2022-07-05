@@ -639,7 +639,7 @@
     {
         "item": "Рейдовые тральщики",
         "producer": "Kyiv",
-        "unit": "Киевский",
+        "unit": "штук",
         "quantity": "1",
         "consumer": "inbound"
     },
