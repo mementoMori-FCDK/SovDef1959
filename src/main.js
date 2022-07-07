@@ -3,7 +3,9 @@ import "./reset.css";
 import "./assets/map.geojson";
 import "./assets/Kyiv.json";
 import loaders from "./loaders.js"
-const {GenerateInfo, loadRegions} = loaders;
+
+const {GenerateInfo, loadRegions, loadProduction} = loaders;
+let currentLayer = L.layerGroup();
 
 var map = L.map('map', {
   zoomControl: false
@@ -23,11 +25,17 @@ let regionsLayer = L.geoJSON(regionsJSON, {
     };
   },
   onEachFeature: function(feature, layer) {
-    let html = '<h1>' + feature.properties.name + ' Regional Economic Soviet' + '</h1>';
+    let html = undefined;
+    if(feature.properties.republic === "Ukraine") {
+      html = '<h1>' + feature.properties.name + ' Regional Economic Soviet' + '</h1>';
+    } else {
+      html = '<h1>' + feature.properties.name + '</h1>';
+    }
     layer.bindPopup(html);
     layer.on('click', function(){
       map.fitBounds(layer.getBounds());
       GenerateInfo(feature.properties.name);
+      console.log(regionsLayer.layers);
     });
     layer.on('mouseover', () => {
       $('#current-region').val(feature.properties.name);
@@ -38,4 +46,27 @@ let regionsLayer = L.geoJSON(regionsJSON, {
   }
 }).addTo(map);
 
+const highlightConsumers = async (region) => {
+  // console.log(currentLayer);
+  let consumers = new Set();
+  let data = await loadProduction(region);
+  data.forEach(entry => {
+    if(entry.consumer === 'inbound') {
+      consumers.add(region);
+    } else consumers.add(entry.consumer);
+  });
+  regionsLayer.eachLayer(function(layer) {
+    // console.log(layer.feature.properties.name);
+    if(consumers.has(layer.feature.properties.name)) {
+      currentLayer.addLayer(layer);
+    }
+  });
+  console.log(currentLayer);
+  map.removeLayer(regionsLayer);
+  map.addLayer(currentLayer);
+};
+
+await highlightConsumers('Kyiv');
+
 GenerateInfo('Kyiv');
+// console.log(regionsLayer);
