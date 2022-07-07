@@ -33,9 +33,11 @@ let regionsLayer = L.geoJSON(regionsJSON, {
     }
     layer.bindPopup(html);
     layer.on('click', function(){
-      map.fitBounds(layer.getBounds());
-      GenerateInfo(feature.properties.name);
-      console.log(regionsLayer.layers);
+      let currentRegion = feature.properties.name;
+      map.removeLayer(currentLayer);
+      console.log('check')
+      highlightConsumers(currentRegion);
+      GenerateInfo(currentRegion);
     });
     layer.on('mouseover', () => {
       $('#current-region').val(feature.properties.name);
@@ -47,7 +49,6 @@ let regionsLayer = L.geoJSON(regionsJSON, {
 }).addTo(map);
 
 const highlightConsumers = async (region) => {
-  // console.log(currentLayer);
   let consumers = new Set();
   let data = await loadProduction(region);
   data.forEach(entry => {
@@ -56,17 +57,10 @@ const highlightConsumers = async (region) => {
     } else consumers.add(entry.consumer);
   });
   regionsLayer.eachLayer(function(layer) {
-    // console.log(layer.feature.properties.name);
     if(consumers.has(layer.feature.properties.name)) {
       currentLayer.addLayer(layer);
     }
   });
-  console.log(currentLayer);
   map.removeLayer(regionsLayer);
   map.addLayer(currentLayer);
 };
-
-await highlightConsumers('Kyiv');
-
-GenerateInfo('Kyiv');
-// console.log(regionsLayer);
