@@ -3,7 +3,7 @@ import "./reset.css";
 import "./assets/map.geojson";
 import "./assets/Kyiv.json";
 import loaders from "./loaders.js"
-const {GenerateInfo, loadProduction, loadRegions} = loaders;
+const {GenerateInfo, loadRegions} = loaders;
 
 var map = L.map('map', {
   zoomControl: false
@@ -13,8 +13,6 @@ var tiles = L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{
   maxZoom: 19,
   attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
 }).addTo(map);
-
-GenerateInfo('Kyiv');
 
 let regionsJSON = await loadRegions().then(data => regionsJSON = data);
 let regionsLayer = L.geoJSON(regionsJSON, {
@@ -29,6 +27,13 @@ let regionsLayer = L.geoJSON(regionsJSON, {
     layer.bindPopup(html);
     layer.on('click', function(){
       map.fitBounds(layer.getBounds());
-    })
+      GenerateInfo(feature.properties.name);
+    });
+    layer.on('mouseover', () => {
+      $('#current-region').val(feature.properties.name);
+    });
+    layer.on('mouseout', () => {
+      $('#current-region').val('');
+    });
   }
 }).addTo(map);

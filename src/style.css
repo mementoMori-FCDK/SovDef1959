@@ -24,9 +24,28 @@ html, body {
     height: 100%;
   }
   
+  .mapContainer{
+    height: 100%;;
+    width: 70%;
+  }
+
+  .overlay{
+    z-index: 100;
+    position: absolute;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    margin: 10px;
+  }
+
+  .overlay h2{
+    margin: 10px 0px 10px 0px;
+  }
+
   #map{
     height: 100%;
-    width: 70%
+    width: 100%;
+    z-index: 1;
   }
   
   #info{

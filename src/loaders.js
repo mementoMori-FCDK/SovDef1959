@@ -52,5 +52,5 @@ const loadRegions = async () => {
     });
   };
 
-const resources = {GenerateInfo, loadProduction, loadRegions};
+const resources = {GenerateInfo, loadRegions};
 export default resources;

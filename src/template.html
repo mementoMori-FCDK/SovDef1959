@@ -14,7 +14,14 @@
 </head>
 <body>
   <div id="container">
-    <div id="map"></div>
+    <div class="mapContainer">
+      <div class="overlay">
+        <h2 id="map-label">SovDef1959</h2>
+        <label for="current-region" id="map-label">Current region</label>
+        <input type="text" id="current-region" value="loh">
+      </div>
+      <div id="map"></div>
+    </div>
     <div id="placeholder"></div>
     <div id="info">
       <div class="welcome">
@@ -27,7 +34,7 @@
           <div class="col">Quantity</div>
           <div class="col">Consumer</div>
         </div>
-    </div>
+      </div>
     </div>
   </div>
   <script src="main.js"></script>
