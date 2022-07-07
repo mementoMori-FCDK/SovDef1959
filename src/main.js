@@ -37,3 +37,5 @@ let regionsLayer = L.geoJSON(regionsJSON, {
     });
   }
 }).addTo(map);
+
+GenerateInfo('Kyiv');
