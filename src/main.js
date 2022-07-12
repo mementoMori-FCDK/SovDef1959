@@ -3,9 +3,17 @@ import "./reset.css";
 import "./assets/map.geojson";
 import "./assets/Kyiv.json";
 import loaders from "./loaders.js"
-
 const {GenerateInfo, loadRegions, loadProduction} = loaders;
-let currentLayer = L.layerGroup();
+
+/**
+ * jquery selectors
+ */
+let table = $('#flex-table');
+
+//array to filter the highlighted regions
+const producers = ["Kyiv", "Odesa", "Lviv", "Mykolaiv", "Dnipro", "Zaporizhia", "Kherson", "Vinnytsia", "Donets'k", "Luhans'k", "Kharkiv"];
+// cuurent consumers highlighted
+let consumersLayer = L.featureGroup();
 
 var map = L.map('map', {
   zoomControl: false
@@ -34,10 +42,10 @@ let regionsLayer = L.geoJSON(regionsJSON, {
     layer.bindPopup(html);
     layer.on('click', function(){
       let currentRegion = feature.properties.name;
-      map.removeLayer(currentLayer);
-      console.log('check')
-      highlightConsumers(currentRegion);
-      GenerateInfo(currentRegion);
+      if(producers.includes(currentRegion)) {
+        highlightConsumers(currentRegion);
+        GenerateInfo(currentRegion);
+      }
     });
     layer.on('mouseover', () => {
       $('#current-region').val(feature.properties.name);
@@ -50,17 +58,47 @@ let regionsLayer = L.geoJSON(regionsJSON, {
 
 const highlightConsumers = async (region) => {
   let consumers = new Set();
+  let features = [];
   let data = await loadProduction(region);
-  data.forEach(entry => {
-    if(entry.consumer === 'inbound') {
-      consumers.add(region);
-    } else consumers.add(entry.consumer);
-  });
-  regionsLayer.eachLayer(function(layer) {
-    if(consumers.has(layer.feature.properties.name)) {
-      currentLayer.addLayer(layer);
-    }
-  });
-  map.removeLayer(regionsLayer);
-  map.addLayer(currentLayer);
+  try{
+    data.forEach(entry => {
+      if(entry.consumer === 'inbound') {
+        consumers.add(region);
+      } else consumers.add(entry.consumer);
+    });
+    
+    //!!!
+    //populate new layer with L.geoJSON and FILTER option
+    //!!!
+    //set map view
+    
+    map.flyTo(map.getCenter(), 4);
+    //replace the layers
+    regionsLayer.remove();
+    consumersLayer.addTo(map);
+    console.log('check end');
+
+  }catch(error) {
+    console.log(error);
+  }
 };
+
+const consumersPopup = () => {
+  return L.popup().setContent('test');
+};
+
+/**
+ * resets the interface to its initial state
+ * replaces the table with the placeholder 
+ */
+const resetView = () => {
+  //remove consumers layer
+  consumersLayer.remove();
+  //delete the generated rows
+  let $header = $('.header');
+  $header.siblings().remove();
+  //replace with the base layer
+  regionsLayer.addTo(map);
+}
+
+$('#map-reset').on('click', resetView);
