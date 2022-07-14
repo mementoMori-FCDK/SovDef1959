@@ -10,6 +10,7 @@ const {GenerateInfo, loadRegions, loadProduction} = loaders;
  */
 let $table = $('#flex-table');
 let $welcome = $('.welcome');
+let $resList = $('#res-list');
 
 //array to filter the highlighted regions
 const producers = ["Kyiv", "Odesa", "Lviv", "Mykolaiv", "Dnipro", "Zaporizhia", "Kherson", "Vinnytsia", "Donets'k", "Luhans'k", "Kharkiv"];
@@ -47,15 +48,25 @@ const setRegionInfo = (feature) => {
   }
 }
 
+const setDropdown = (feature) => {
+  if(producers.includes(feature.properties.name)) {
+    // let a = "<a>" + feature.properties.name + "</a>";
+    let $listElement =$('<a></a>').text(`${feature.properties.name}`);
+    $listElement.addClass('list-element');
+    $resList.append($listElement);
+  }
+}
+
 let regionsJSON = await loadRegions().then(data => regionsJSON = data);
 let regionsLayer = L.geoJSON(regionsJSON, {
   style: defaultStyle,
   onEachFeature: function(feature, layer) {
+    setDropdown(feature);
     layer.on('click', function(){
       let currentRegion = feature.properties.name;
       if(producers.includes(currentRegion)) {
-        $table.toggle();
-        $welcome.toggle();
+        $table.show();
+        $welcome.hide();
         highlightConsumers(currentRegion);
         GenerateInfo(currentRegion);
       }
@@ -136,3 +147,6 @@ const resetView = () => {
 }
 
 $('#map-reset').on('click', resetView);
+$('.list-element').on('click', function (e) {
+  console.log(e.target.text);
+})
