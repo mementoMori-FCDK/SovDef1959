@@ -14,6 +14,7 @@ let $welcome = $('.welcome');
 //array to filter the highlighted regions
 const producers = ["Kyiv", "Odesa", "Lviv", "Mykolaiv", "Dnipro", "Zaporizhia", "Kherson", "Vinnytsia", "Donets'k", "Luhans'k", "Kharkiv"];
 // cuurent consumers highlighted
+const center = [49.98964246591577, 36.23222351074219];
 let currentLayer = undefined;
 let defaultStyle = {
   color: '#87ceeb',
@@ -26,7 +27,7 @@ let hoverStyle ={
 
 var map = L.map('map', {
   zoomControl: false
-}).setView([49.98964246591577, 36.23222351074219], 4);
+}).setView(center, 5);
 
 var tiles = L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png', {
   maxZoom: 19,
@@ -97,7 +98,10 @@ const highlightConsumers = async (region) => {
       }
     });
     //set map view
-    map.flyTo(map.getCenter(), 4);
+    map.flyTo(center, 4, {
+      animate: true,
+      duration: 0.5
+    });
     //replace the layers
     regionsLayer.remove();
     currentLayer.addTo(map);
@@ -116,15 +120,19 @@ const resetView = () => {
   if(currentLayer !== undefined)
     currentLayer.remove();
   //toggle welcome div
-  $welcome.toggle();
+  $welcome.show();
   //toggle info table
-  $table.toggle();
+  $table.hide();
   //delete the generated rows
   let $header = $('.header');
   if($header !== undefined)
     $header.siblings().remove();
   //replace with the base layer
   regionsLayer.addTo(map);
+  map.flyTo(center, 5, {
+    animate: true,
+    duration: 0.5
+  });
 }
 
 $('#map-reset').on('click', resetView);
