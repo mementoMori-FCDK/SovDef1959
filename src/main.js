@@ -37,7 +37,7 @@ var tiles = L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{
 
 /**
  * returns region info string
- * @param feature 
+ * @param feature
  * @returns string with region info
  */
 const setRegionInfo = (feature) => {
@@ -46,30 +46,39 @@ const setRegionInfo = (feature) => {
   } else {
     return feature.properties.name;
   }
-}
+};
 
-const setDropdown = (feature) => {
-  if(producers.includes(feature.properties.name)) {
-    // let a = "<a>" + feature.properties.name + "</a>";
+const setDropdown = (feature, base) => {
+  if(base){
+    if(producers.includes(feature.properties.name)) {
+      let $listElement =$('<a></a>').text(`${feature.properties.name}`);
+      $listElement.addClass('list-element');
+      $resList.append($listElement);
+    }
+  } else {
     let $listElement =$('<a></a>').text(`${feature.properties.name}`);
     $listElement.addClass('list-element');
     $resList.append($listElement);
   }
-}
+};
+
+async function baseLayerClickHandler(regionName) {
+  if(producers.includes(regionName)) {
+    $table.show();
+    $welcome.hide();
+    currentLayer = await highlightConsumers(regionName);
+    GenerateInfo(regionName);
+  }
+};
+
 
 let regionsJSON = await loadRegions().then(data => regionsJSON = data);
 let regionsLayer = L.geoJSON(regionsJSON, {
   style: defaultStyle,
   onEachFeature: function(feature, layer) {
-    setDropdown(feature);
-    layer.on('click', function(){
-      let currentRegion = feature.properties.name;
-      if(producers.includes(currentRegion)) {
-        $table.show();
-        $welcome.hide();
-        highlightConsumers(currentRegion);
-        GenerateInfo(currentRegion);
-      }
+    setDropdown(feature, true);
+    layer.on('click', async function(){
+      baseLayerClickHandler(feature.properties.name);
     });
     layer.on('mouseover', () => {
       $('#current-region').val(setRegionInfo(feature));
@@ -80,9 +89,11 @@ let regionsLayer = L.geoJSON(regionsJSON, {
       layer.setStyle(defaultStyle);
     });
   }
+  
 }).addTo(map);
 
 const highlightConsumers = async (region) => {
+  $resList.empty();
   let consumers = new Set();
   let data = await loadProduction(region);
   try{
@@ -98,6 +109,7 @@ const highlightConsumers = async (region) => {
         if(consumers.has(geoJsonFeature.properties.name)) return true;
       },
       onEachFeature: function(feature, layer){
+        setDropdown(feature, false);
         layer.on('mouseover', () => {
           $('#current-region').val(setRegionInfo(feature));
           layer.setStyle(hoverStyle);
@@ -108,6 +120,27 @@ const highlightConsumers = async (region) => {
         });
       }
     });
+
+    $('.list-element').on('mouseover', (e) => {
+      let dropdownOption = e.target.innerText;
+      let layers = currentLayer.getLayers();
+      layers.forEach(function(layer) {
+        if(layer.feature.properties.name === dropdownOption){
+          console.log(layer);
+          layer.fire('mouseover');
+        }
+      });
+    });
+    
+    $('.list-element').on('mouseout', (e) => {
+      let dropdownOption = e.target.innerText;
+      let layers = currentLayer.getLayers();
+      layers.forEach(function(layer) {
+        if(layer.feature.properties.name === dropdownOption){
+          layer.fire('mouseout');
+        }
+      });
+    });
     //set map view
     map.flyTo(center, 4, {
       animate: true,
@@ -116,6 +149,7 @@ const highlightConsumers = async (region) => {
     //replace the layers
     regionsLayer.remove();
     currentLayer.addTo(map);
+    return currentLayer;
   }catch(error) {
     console.log(error);
   }
@@ -123,30 +157,85 @@ const highlightConsumers = async (region) => {
 
 /**
  * resets the interface to its initial state
- * replaces the table with the placeholder 
+ * replaces the table with the placeholder
  */
 const resetView = () => {
-  //remove consumers layer
-  console.log(currentLayer);
-  if(currentLayer !== undefined)
+  //remove currentLayer from the map
+  if(currentLayer !== undefined){
     currentLayer.remove();
+    currentLayer = undefined;
+  }
+  // reset dropdown
+  $resList.empty();
   //toggle welcome div
   $welcome.show();
   //toggle info table
   $table.hide();
-  //delete the generated rows
+  //delete generated rows
   let $header = $('.header');
   if($header !== undefined)
     $header.siblings().remove();
   //replace with the base layer
   regionsLayer.addTo(map);
+  regionsLayer.eachLayer(function(layer) {
+    setDropdown(layer.feature, true);
+  });
+
+  $('.list-element').on('click', (e) => {
+    console.log('dropdown select');
+    baseLayerClickHandler(e.target.innerText);
+  });
+  
+  $('.list-element').on('mouseover', (e) => {
+    let dropdownOption = e.target.innerText;
+    let layers = regionsLayer.getLayers();
+    layers.forEach(function(layer) {
+      if(layer.feature.properties.name === dropdownOption){
+        layer.fire('mouseover');
+      }
+    });
+  });
+  
+  $('.list-element').on('mouseout', (e) => {
+    let dropdownOption = e.target.innerText;
+    let layers = regionsLayer.getLayers();
+    layers.forEach(function(layer) {
+      if(layer.feature.properties.name === dropdownOption){
+        layer.fire('mouseout');
+      }
+    });
+  });
+
+  console.log($resList);
   map.flyTo(center, 5, {
     animate: true,
     duration: 0.5
   });
-}
+};
 
 $('#map-reset').on('click', resetView);
-$('.list-element').on('click', function (e) {
-  console.log(e.target.text);
-})
+
+$('.list-element').on('click', (e) => {
+  console.log('dropdown select');
+  baseLayerClickHandler(e.target.innerText);
+});
+
+$('.list-element').on('mouseover', (e) => {
+  let dropdownOption = e.target.innerText;
+  let layers = regionsLayer.getLayers();
+  layers.forEach(function(layer) {
+    if(layer.feature.properties.name === dropdownOption){
+      layer.fire('mouseover');
+    }
+  });
+});
+
+$('.list-element').on('mouseout', (e) => {
+  let dropdownOption = e.target.innerText;
+  let layers = regionsLayer.getLayers();
+  layers.forEach(function(layer) {
+    if(layer.feature.properties.name === dropdownOption){
+      layer.fire('mouseout');
+    }
+  });
+});
