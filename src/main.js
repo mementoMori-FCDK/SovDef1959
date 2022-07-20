@@ -3,6 +3,8 @@ import "./reset.css";
 import "./assets/map.geojson";
 import "./assets/Kyiv.json";
 import loaders from "./loaders.js"
+
+//unpack imports
 const {GenerateInfo, loadRegions, loadProduction} = loaders;
 
 /**
@@ -11,6 +13,7 @@ const {GenerateInfo, loadRegions, loadProduction} = loaders;
 let $table = $('#flex-table');
 let $welcome = $('.welcome');
 let $resList = $('#res-list');
+let $listElement = $('.list-element');
 
 //array to filter the highlighted regions
 const producers = ["Kyiv", "Odesa", "Lviv", "Mykolaiv", "Dnipro", "Zaporizhia", "Kherson", "Vinnytsia", "Donets'k", "Luhans'k", "Kharkiv"];
@@ -21,7 +24,7 @@ let defaultStyle = {
   color: '#87ceeb',
   fillOpacity: 0.1
 };
-let hoverStyle ={
+let hoverStyle = {
   color: '#ff7d00',
   fillOpacity: 0.5
 };
@@ -51,18 +54,59 @@ const setRegionInfo = (feature) => {
 const setDropdown = (feature, base) => {
   if(base){
     if(producers.includes(feature.properties.name)) {
-      let $listElement =$('<a></a>').text(`${feature.properties.name}`);
+      $listElement =$('<a></a>').text(`${feature.properties.name}`);
       $listElement.addClass('list-element');
       $resList.append($listElement);
     }
+
+    $listElement.on('mouseover', (e) => {
+      // $('#dropdown-button').
+      let dropdownOption = e.target.innerText;
+      let layers = regionsLayer.getLayers();  
+      layers.forEach(function(layer) {
+        if(layer.feature.properties.name === dropdownOption){
+          layer.fire('mouseover');
+        }
+      });
+    });
+    
+    $listElement.on('mouseout', (e) => {
+      let dropdownOption = e.target.innerText;
+      let layers = regionsLayer.getLayers();
+      layers.forEach(function(layer) {
+        if(layer.feature.properties.name === dropdownOption){
+          layer.fire('mouseout');
+        }
+      });
+    });
   } else {
-    let $listElement =$('<a></a>').text(`${feature.properties.name}`);
+    $listElement =$('<a></a>').text(`${feature.properties.name}`);
     $listElement.addClass('list-element');
     $resList.append($listElement);
+
+    $listElement.on('mouseover', (e) => {
+      let dropdownOption = e.target.innerText;
+      let layers = currentLayer.getLayers();  
+      layers.forEach(function(layer) {
+        if(layer.feature.properties.name === dropdownOption){
+          layer.fire('mouseover');
+        }
+      });
+    });
+    
+    $listElement.on('mouseout', (e) => {
+      let dropdownOption = e.target.innerText;
+      let layers = currentLayer.getLayers();
+      layers.forEach(function(layer) {
+        if(layer.feature.properties.name === dropdownOption){
+          layer.fire('mouseout');
+        }
+      });
+    });
   }
 };
 
-async function baseLayerClickHandler(regionName) {
+async function BaseLayerClickHandler(regionName) {
   if(producers.includes(regionName)) {
     $table.show();
     $welcome.hide();
@@ -71,14 +115,13 @@ async function baseLayerClickHandler(regionName) {
   }
 };
 
-
 let regionsJSON = await loadRegions().then(data => regionsJSON = data);
-let regionsLayer = L.geoJSON(regionsJSON, {
+export let regionsLayer = L.geoJSON(regionsJSON, {
   style: defaultStyle,
   onEachFeature: function(feature, layer) {
     setDropdown(feature, true);
     layer.on('click', async function(){
-      baseLayerClickHandler(feature.properties.name);
+      BaseLayerClickHandler(feature.properties.name);
     });
     layer.on('mouseover', () => {
       $('#current-region').val(setRegionInfo(feature));
@@ -121,26 +164,6 @@ const highlightConsumers = async (region) => {
       }
     });
 
-    $('.list-element').on('mouseover', (e) => {
-      let dropdownOption = e.target.innerText;
-      let layers = currentLayer.getLayers();
-      layers.forEach(function(layer) {
-        if(layer.feature.properties.name === dropdownOption){
-          console.log(layer);
-          layer.fire('mouseover');
-        }
-      });
-    });
-    
-    $('.list-element').on('mouseout', (e) => {
-      let dropdownOption = e.target.innerText;
-      let layers = currentLayer.getLayers();
-      layers.forEach(function(layer) {
-        if(layer.feature.properties.name === dropdownOption){
-          layer.fire('mouseout');
-        }
-      });
-    });
     //set map view
     map.flyTo(center, 4, {
       animate: true,
@@ -150,12 +173,12 @@ const highlightConsumers = async (region) => {
     regionsLayer.remove();
     currentLayer.addTo(map);
     return currentLayer;
-  }catch(error) {
+  } catch(error) {
     console.log(error);
   }
 };
 
-/**
+/*
  * resets the interface to its initial state
  * replaces the table with the placeholder
  */
@@ -182,31 +205,9 @@ const resetView = () => {
   });
 
   $('.list-element').on('click', (e) => {
-    console.log('dropdown select');
-    baseLayerClickHandler(e.target.innerText);
-  });
-  
-  $('.list-element').on('mouseover', (e) => {
-    let dropdownOption = e.target.innerText;
-    let layers = regionsLayer.getLayers();
-    layers.forEach(function(layer) {
-      if(layer.feature.properties.name === dropdownOption){
-        layer.fire('mouseover');
-      }
-    });
-  });
-  
-  $('.list-element').on('mouseout', (e) => {
-    let dropdownOption = e.target.innerText;
-    let layers = regionsLayer.getLayers();
-    layers.forEach(function(layer) {
-      if(layer.feature.properties.name === dropdownOption){
-        layer.fire('mouseout');
-      }
-    });
+    BaseLayerClickHandler(e.target.innerText);
   });
 
-  console.log($resList);
   map.flyTo(center, 5, {
     animate: true,
     duration: 0.5
@@ -216,26 +217,5 @@ const resetView = () => {
 $('#map-reset').on('click', resetView);
 
 $('.list-element').on('click', (e) => {
-  console.log('dropdown select');
-  baseLayerClickHandler(e.target.innerText);
-});
-
-$('.list-element').on('mouseover', (e) => {
-  let dropdownOption = e.target.innerText;
-  let layers = regionsLayer.getLayers();
-  layers.forEach(function(layer) {
-    if(layer.feature.properties.name === dropdownOption){
-      layer.fire('mouseover');
-    }
-  });
-});
-
-$('.list-element').on('mouseout', (e) => {
-  let dropdownOption = e.target.innerText;
-  let layers = regionsLayer.getLayers();
-  layers.forEach(function(layer) {
-    if(layer.feature.properties.name === dropdownOption){
-      layer.fire('mouseout');
-    }
-  });
+  BaseLayerClickHandler(e.target.innerText);
 });
