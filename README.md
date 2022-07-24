@@ -7,4 +7,4 @@ The goal is to draw the connection between the producers and the consumers of mi
 The interface consists of an interactive map, table and two overlays.
 
 Implemented with leaflet js, JavaScript, HTML, CSS, JSON, JQUERY.
-Hosted at [https://sovdef1959.netlify.app/]https://sovdef1959.netlify.app/
+Hosted at https://sovdef1959.netlify.app/
