@@ -1,0 +1,314 @@
+﻿[
+    {
+        "item": "Турбореактивные двигатели РД-500к для изделий ФКР-1, КС и C-2",
+        "producer": "Zaporizhia",
+        "unit": "комплектов",
+        "quantity": "957",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Турбореактивные двигатели РД-500к для изделий ФКР-1, КС и C-3",
+        "producer": "Zaporizhia",
+        "unit": "комплектов",
+        "quantity": "240",
+        "consumer": "RU",
+        "type": "rockets"
+    },
+    {
+        "item": "Турбореактивные двигатели РД-500к для изделий ФКР-1, КС и C-4",
+        "producer": "Zaporizhia",
+        "unit": "комплектов",
+        "quantity": "27",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Бортовая аппаратура системы автономного управления  для изделий 8К71",
+        "producer": "Zaporizhia",
+        "unit": "комплект",
+        "quantity": "690",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Стыковочные машины 8Т318 для изделий 8К63",
+        "producer": "Zaporizhia",
+        "unit": "штук",
+        "quantity": "108",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Стыковочные машины 8Т315 для изделий 8К51",
+        "producer": "Zaporizhia",
+        "unit": "штук",
+        "quantity": "72",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Стыковочные/изотермические машины 8Т328 для изделий 8К11",
+        "producer": "Zaporizhia",
+        "unit": "штук",
+        "quantity": "90",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Монтажно-стыковочные средства 8T136 для изделий 8К71",
+        "producer": "Zaporizhia",
+        "unit": "комплект",
+        "quantity": "1",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Поворотно-стыковочные тележки 8Т135 для изделий 8К71",
+        "producer": "Zaporizhia",
+        "unit": "комплект",
+        "quantity": "3",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Стапели-пакетировщики 8Т317 с комплектом траверс для изделий 8К71",
+        "producer": "Zaporizhia",
+        "unit": "комплект",
+        "quantity": "3",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Подогреватели-заправщики перекиси водорода 8Г210 для изделий 8К63",
+        "producer": "Zaporizhia",
+        "unit": "штук",
+        "quantity": "54",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Подогреватели-заправщики перекиси водорода 8Г28 для изделий 8К51",
+        "producer": "Zaporizhia",
+        "unit": "штук",
+        "quantity": "36",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Цистерны-полуприцепы окислителя ЗАК-31ц (8ГІЗ1) для изделий 8К63",
+        "producer": "Zaporizhia",
+        "unit": "штук",
+        "quantity": "324",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Компрессорные станции 8Г311 из 4-х компрессоров (2PB-3, 4/400) для изделий 8K71",
+        "producer": "Zaporizhia",
+        "unit": "комплект",
+        "quantity": "3",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Компрессорные станции хранилища 8ГЗ12 для изделий 8К71",
+        "producer": "Zaporizhia",
+        "unit": "комплект",
+        "quantity": "3",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Реактивные двигатели АИ-20Д",
+        "producer": "Zaporizhia",
+        "unit": "штук",
+        "quantity": "340",
+        "consumer": "Moscow",
+        "type": "air forces"
+    },
+    {
+        "item": "Реактивные двигатели АИ-20Д",
+        "producer": "Zaporizhia",
+        "unit": "штук",
+        "quantity": "360",
+        "consumer": "UZB",
+        "type": "air forces"
+    },
+    {
+        "item": "Реактивные двигатели РД45фа",
+        "producer": "Zaporizhia",
+        "unit": "штук",
+        "quantity": "500",
+        "consumer": "Moscow",
+        "type": "air forces"
+    },
+    {
+        "item": "Реактивные двигатели РД45фа",
+        "producer": "Zaporizhia",
+        "unit": "штук",
+        "quantity": "700",
+        "consumer": "RU",
+        "type": "air forces"
+    },
+    {
+        "item": "Поршневые двигатели АИ-26В",
+        "producer": "Zaporizhia",
+        "unit": "штук",
+        "quantity": "200",
+        "consumer": "Moscow",
+        "type": "air forces"
+    },
+    {
+        "item": "Поршневые двигатели АИ-26В",
+        "producer": "Zaporizhia",
+        "unit": "штук",
+        "quantity": "750",
+        "consumer": "RU",
+        "type": "air forces"
+    },
+    {
+        "item": "Общевойсковне радиостанции Р-104 (РДС)",
+        "producer": "Zaporizhia",
+        "unit": "компл.",
+        "quantity": "830",
+        "consumer": "Kharkiv",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Общевойсковне радиостанции Р-104 (РДС) автомобильные и стационарные",
+        "producer": "Zaporizhia",
+        "unit": "компл.",
+        "quantity": "1170",
+        "consumer": "Moscow",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Корабельные радиостанции Р-609 ('Кипарис' и 'Акация')",
+        "producer": "Zaporizhia",
+        "unit": "компл.",
+        "quantity": "3278",
+        "consumer": "RU",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Корабельные радиостанции Р-609 ('Кипарис' и 'Акация')",
+        "producer": "Zaporizhia",
+        "unit": "компл.",
+        "quantity": "1",
+        "consumer": "EE",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Корабельные радиостанции Р-609 ('Кипарис' и 'Акация')",
+        "producer": "Zaporizhia",
+        "unit": "компл.",
+        "quantity": "150",
+        "consumer": "Kherson",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Корабельные радиостанции Р-609 ('Кипарис' и 'Акация')",
+        "producer": "Zaporizhia",
+        "unit": "компл.",
+        "quantity": "16",
+        "consumer": "Kyiv",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Радиостанции аэродромные",
+        "producer": "Zaporizhia",
+        "unit": "компл.",
+        "quantity": "924",
+        "consumer": "RU",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Радиостанции аэродромные",
+        "producer": "Zaporizhia",
+        "unit": "компл.",
+        "quantity": "6",
+        "consumer": "Kherson",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Засекречивающая аппаратура Р-754 ('Сирена')",
+        "producer": "Zaporizhia",
+        "unit": "компл.",
+        "quantity": "100",
+        "consumer": "Moscow",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Засекречивающая аппаратура Р-755 ('Ландыш')",
+        "producer": "Zaporizhia",
+        "unit": "компл.",
+        "quantity": "20",
+        "consumer": "Moscow",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Минные защитники М3-26",
+        "producer": "Zaporizhia",
+        "unit": "компл.",
+        "quantity": "2000",
+        "consumer": "Moscow",
+        "type": "ammunition"
+    },
+    {
+        "item": "Корпуса противопехотных мин ПОМЗ-2М",
+        "producer": "Zaporizhia",
+        "unit": "тыс.шт",
+        "quantity": "415",
+        "consumer": "Moscow",
+        "type": "ammunition"
+    },
+    {
+        "item": "Карабины к противопехотным минам ПОМЗ-2М",
+        "producer": "Zaporizhia",
+        "unit": "тыс.шт",
+        "quantity": "415",
+        "consumer": "inbound",
+        "type": "ammunition"
+    },
+    {
+        "item": "Корпуса 82 мм осколочных мин",
+        "producer": "Zaporizhia",
+        "unit": "тыс.шт",
+        "quantity": "510",
+        "consumer": "Dnipro",
+        "type": "ammunition"
+    },
+    {
+        "item": "Корпуса 107мм кумулятивных мин в собранном виде к безоткатным орудиям Б-12",
+        "producer": "Zaporizhia",
+        "unit": "тыс.шт",
+        "quantity": "40",
+        "consumer": "Moscow",
+        "type": "ammunition"
+    },
+    {
+        "item": "Реактивные двигатели АИ-2ОД",
+        "producer": "Zaporizhia",
+        "unit": "штук",
+        "quantity": "700",
+        "consumer": "inbound",
+        "type": "air forces"
+    },
+    {
+        "item": "Реактивные двигатели РД-45фа",
+        "producer": "Zaporizhia",
+        "unit": "штук",
+        "quantity": "1200",
+        "consumer": "inbound",
+        "type": "air forces"
+    },
+    {
+        "item": "Поршневые двигатели АИ-26B",
+        "producer": "Zaporizhia",
+        "unit": "штук",
+        "quantity": "950",
+        "consumer": "inbound",
+        "type": "air forces"
+    }
+]

@@ -1,0 +1,50 @@
+﻿[
+    {
+        "item": "Топливозаправщики Т3-200 емкостью 8000 литров",
+        "producer": "Lugans'k",
+        "unit": "штук",
+        "quantity": "1500",
+        "consumer": "Moscow",
+        "type": "maintenance"
+    },
+    {
+        "item": "Башни танка Т-55",
+        "producer": "Lugans'k",
+        "unit": "штук",
+        "quantity": "1700",
+        "consumer": "RU",
+        "type": "tanks"
+    },
+    {
+        "item": "Заряды для реактивных снарядов С-21",
+        "producer": "Lugans'k",
+        "unit": "тыс.шт",
+        "quantity": "20",
+        "consumer": "Moscow",
+        "type": "air force"
+    },
+    {
+        "item": "Заряды для реактивных снарядов М-140Ф",
+        "producer": "Lugans'k",
+        "unit": "тыс.шт",
+        "quantity": "60",
+        "consumer": "Moscow",
+        "type": "air force"
+    },
+    {
+        "item": "Заряды реактивных снарядов М-24 ФУД",
+        "producer": "Lugans'k",
+        "unit": "тыс.шт",
+        "quantity": "25",
+        "consumer": "Moscow",
+        "type": "air force"
+    },
+    {
+        "item": "Заряды для реактивных снарядов М-24Ф",
+        "producer": "Lugans'k",
+        "unit": "тыс. шт",
+        "quantity": "50",
+        "consumer": "Moscow",
+        "type": "air force"
+    }
+]

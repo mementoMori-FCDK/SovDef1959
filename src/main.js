@@ -1,7 +1,7 @@
 import "./style.css";
 import "./reset.css";
 import "./assets/map.geojson";
-import "./assets/Kyiv.json";
+// import "./assets/Kyiv.json";
 import loaders from "./loaders.js"
 
 //unpack imports
@@ -16,7 +16,7 @@ let $resList = $('#res-list');
 let $listElement = $('.list-element');
 
 //array to filter the highlighted regions
-const producers = ["Kyiv", "Odesa", "Lviv", "Mykolaiv", "Dnipro", "Zaporizhia", "Kherson", "Vinnytsia", "Donets'k", "Luhans'k", "Kharkiv"];
+const producers = ["Kyiv", "Odesa", "Lviv", "Dnipro", "Zaporizhia", "Kherson", "Vinnytsia", "Donets'k", "Luhans'k", "Kharkiv"];
 // cuurent consumers highlighted
 const center = [49.98964246591577, 36.23222351074219];
 let currentLayer = undefined;
@@ -28,6 +28,14 @@ let hoverStyle = {
   color: '#ff7d00',
   fillOpacity: 0.5
 };
+
+const cache = {};
+
+function importAll(r) {
+  r.keys().forEach((key) => (cache[key] = r(key)));
+}
+
+importAll(require.context('./assets/', true, /\.json$/));
 
 var map = L.map('map', {
   zoomControl: false

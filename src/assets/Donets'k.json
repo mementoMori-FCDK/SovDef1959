@@ -1,0 +1,314 @@
+﻿[
+    {
+        "item": "Монтажно-сборочные стенды для изделий 'Буря'",
+        "producer": "Donets'k",
+        "unit": "комплект",
+        "quantity": "1",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Установщики 8УO213 для изделий 8К71",
+        "producer": "Donets'k",
+        "unit": "штук",
+        "quantity": "3",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Установщики 8У210 с тягачами МАЗ-529 для изделий 8K63",
+        "producer": "Donets'k",
+        "unit": "штук",
+        "quantity": "32",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Установщики 8У25 для изделий 8К51",
+        "producer": "Donets'k",
+        "unit": "штук",
+        "quantity": "36",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Установщики 35У10 для изделий 'Буря'",
+        "producer": "Donets'k",
+        "unit": "штук",
+        "quantity": "4",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Подъемно-пусковое, транспортное, стыковочное и вспомогательное оборудование на пневмоходу для изделий 'Буря'",
+        "producer": "Donets'k",
+        "unit": "комплект",
+        "quantity": "1",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Специальные полуприцепы 35Т11 и 35Т12 Для транспортировки частей изделий 'Буря'",
+        "producer": "Donets'k",
+        "unit": "комплект",
+        "quantity": "2",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Автомашины для транспортировки оперения изделий 'Буря'",
+        "producer": "Donets'k",
+        "unit": "комплект",
+        "quantity": "2",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Кабины обслуживания 8У216 для изделий 8К71",
+        "producer": "Donets'k",
+        "unit": "штук",
+        "quantity": "2",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Манипуляторы 35T20 для изделий 'Буря'",
+        "producer": "Donets'k",
+        "unit": "штук",
+        "quantity": "2",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Площадки обслуживания 35Т18 в ангаре и на стартовых позициях для изделий 'Буря'",
+        "producer": "Donets'k",
+        "unit": "комплект",
+        "quantity": "2",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Поворотные платформы 35Т10 для изделий 'Буря'",
+        "producer": "Donets'k",
+        "unit": "штук",
+        "quantity": "2",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Железнодорожные заправщики 8Г29 для изделий 8К71",
+        "producer": "Donets'k",
+        "unit": "комплект",
+        "quantity": "3",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Топливные железнодорожные цистерны 8Г058 для изделий 8К71",
+        "producer": "Donets'k",
+        "unit": "штук",
+        "quantity": "4",
+        "consumer": "RU",
+        "type": "rockets"
+    },
+    {
+        "item": "Цистерны-заправщики горючего 8Г112 для изделий 8K63",
+        "producer": "Donets'k",
+        "unit": "штук",
+        "quantity": "108",
+        "consumer": "Moscow ",
+        "type": "rockets"
+    },
+    {
+        "item": "Цистерны заправщики спирта 8Г19 для изделий 8K51",
+        "producer": "Donets'k",
+        "unit": "штук",
+        "quantity": "72",
+        "consumer": "Moscow ",
+        "type": "rockets"
+    },
+    {
+        "item": "Топливозаправщики ТЗ-18-1 на полуприцепах МАЗ-520-4м",
+        "producer": "Donets'k",
+        "unit": "штук",
+        "quantity": "4",
+        "consumer": "Moscow ",
+        "type": "maintenance"
+    },
+    {
+        "item": "Топливозаправщики Т3-20-1 на полуприцепах МАЗ-520-4м",
+        "producer": "Donets'k",
+        "unit": "штук",
+        "quantity": "4",
+        "consumer": "Moscow ",
+        "type": "maintenance"
+    },
+    {
+        "item": "Топливозаправщики Т3-16 емкостью 16000 литров",
+        "producer": "Donets'k",
+        "unit": "штук",
+        "quantity": "450",
+        "consumer": "Moscow",
+        "type": "maintenance"
+    },
+    {
+        "item": "160 мм минометы М-160",
+        "producer": "Donets'k",
+        "unit": "штук",
+        "quantity": "200",
+        "consumer": "Moscow",
+        "type": "weapons"
+    },
+    {
+        "item": "Огнеметние танки TO-54",
+        "producer": "Donets'k",
+        "unit": "штук",
+        "quantity": "250",
+        "consumer": "Moscow",
+        "type": "tanks"
+    },
+    {
+        "item": "Башни танка Т-55",
+        "producer": "Donets'k",
+        "unit": "штук",
+        "quantity": "3350",
+        "consumer": "Kharkiv",
+        "type": "tanks"
+    },
+    {
+        "item": "Корпуса 122 мм осколочоных гранат к гаубицам обр. 1938 г.",
+        "producer": "Donets'k",
+        "unit": "тыс.шт",
+        "quantity": "33",
+        "consumer": "inbound",
+        "type": "ammunition"
+    },
+    {
+        "item": "ФАБ-3000 M-54",
+        "producer": "Donets'k",
+        "unit": "тыс.шт",
+        "quantity": "2.5",
+        "consumer": "Dnipro",
+        "type": "air forces"
+    },
+    {
+        "item": "ФАБ-500 М-54",
+        "producer": "Donets'k",
+        "unit": "тыс.шт",
+        "quantity": "13.5",
+        "consumer": "RU",
+        "type": "air forces"
+    },
+    {
+        "item": "ОФAБ-250-270",
+        "producer": "Donets'k",
+        "unit": "тыс.шт",
+        "quantity": "4",
+        "consumer": "inbound",
+        "type": "air forces"
+    },
+    {
+        "item": "Корпуса реактивных снарядов М-24Ф",
+        "producer": "Donets'k",
+        "unit": "тыс.шт",
+        "quantity": "20",
+        "consumer": "RU",
+        "type": "ammunition"
+    },
+    {
+        "item": "КРАБ-500",
+        "producer": "Donets'k",
+        "unit": "тыс.шт",
+        "quantity": "4",
+        "consumer": "Moscow",
+        "type": "air forces"
+    },
+    {
+        "item": "0ФAБ-100-120",
+        "producer": "Donets'k",
+        "unit": "тыс.шт",
+        "quantity": "0.6",
+        "consumer": "Moscow",
+        "type": "air forces"
+    },
+    {
+        "item": "ОФАБ-100-125ТУ",
+        "producer": "Donets'k",
+        "unit": "тыс.шт",
+        "quantity": "145",
+        "consumer": "Moscow",
+        "type": "air forces"
+    },
+    {
+        "item": "Снаряжение 122 мм осколочно-фугасных снарядов к гаубице обр. 1938 г.",
+        "producer": "Donets'k",
+        "unit": "тыс.шт",
+        "quantity": "1052",
+        "consumer": "Moscow",
+        "type": "ammunition"
+    },
+    {
+        "item": "Снаряжение 152 мм осколочно-фугасных гранат к пушкам-гаубицам обр. 1937 г. и Д-20",
+        "producer": "Donets'k",
+        "unit": "тыс.шт",
+        "quantity": "850",
+        "consumer": "Moscow",
+        "type": "ammunition"
+    },
+    {
+        "item": "Снаряжение инженерных мин ТМД-Б",
+        "producer": "Donets'k",
+        "unit": "тыс.шт",
+        "quantity": "424",
+        "consumer": "Moscow ",
+        "type": "ammunition"
+    },
+    {
+        "item": "Снаряжение 82 мм кумулятивных мин к безоткатным орудиям Б-10",
+        "producer": "Donets'k",
+        "unit": "тыс.шт",
+        "quantity": "793",
+        "consumer": "Moscow ",
+        "type": "ammunition"
+    },
+    {
+        "item": "Снаряжение 107 мм кумулятивных мин к безоткатным орудиям Б-11",
+        "producer": "Donets'k",
+        "unit": "тыс.шт",
+        "quantity": "500",
+        "consumer": "Moscow ",
+        "type": "ammunition"
+    },
+    {
+        "item": "Мостоукладчики типа МТУ на базе среднего танка",
+        "producer": "Donets'k",
+        "unit": "штук",
+        "quantity": "250",
+        "consumer": "Moscow",
+        "type": "engineering"
+    },
+    {
+        "item": "160мм минометы М-160",
+        "producer": "Donets'k",
+        "unit": "штук",
+        "quantity": "200",
+        "consumer": "inbound",
+        "type": "weapons"
+    },
+    {
+        "item": "Огнеметные танки ТО-54",
+        "producer": "Donets'k",
+        "unit": "штук",
+        "quantity": "250",
+        "consumer": "inbound",
+        "type": "tanks"
+    },
+    {
+        "item": "Бронедетали корпуса среднего танка",
+        "producer": "Donets'k ",
+        "unit": "компл.",
+        "quantity": "4100",
+        "consumer": "Kharkiv",
+        "type": "tanks"
+    }
+]
