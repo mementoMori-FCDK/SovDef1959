@@ -1,0 +1,1210 @@
+﻿[
+    {
+        "item": "Бортовая аппаратура системы автономного управления для изделий 8К72",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "80",
+        "consumer": "RU",
+        "type": "rockets"
+    },
+    {
+        "item": "Бортовая аппаратура автономной системы управления для изделий 8К64",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "620",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Бортовая аппаратура автономной системы управления для машин 8T310 - изделия 8К64",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "24",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Бортовая аппаратура автономной системы управления для машин 8T331 изделий 8К64",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "31",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Бортовая аппаратура системы радиоуправления для изделий 8К51",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "25",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Бортовая аппаратура системы радиоуправления для машин 8Т320 из делий 8К51",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "25",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Бортовая аппаратура системы автономного управления для машин 8T320 изделий 8K51",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "25",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Проверочно-испытательная аппаратура автономной системы управления монтажно-испытательного корпуса для изделий 8K71",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "2",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Аппаратура автономных испытаний приборов автономной системы управления для изделий 8К71",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "2",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Проверочно-испытательная аппаратура автономной системы управления монтажно-испытательного корпуса для изделий 8K71",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "2",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Аппаратура автономных испытаний приборов автономной системы управления для изделий 8К71",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "2",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Проверочно-пусковая аппаратура автономной системы управления стартовой позиции для изделий 8К71",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "2",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Проверочно-пусковая аппаратура автономной системы управления стартовой позиции для изделий 8К71",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "1",
+        "consumer": "RU",
+        "type": "rockets"
+    },
+    {
+        "item": "Проверочно-испытательная аппаратура автономной системы управления хранилища блоков для изделий 8К71 (удвоенные комплекты)",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "2",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Машины автономных испытаний 8Н112 для изделий 8К64",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "8",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Машины горизонтальных испытаний 8Н113 для изделий 8К63",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "8",
+        "consumer": "RU",
+        "type": "rockets"
+    },
+    {
+        "item": "Машины предпусковой подготовки и пуска 8H213 для изделий 8K63",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "6",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Машины автономных испытаний 8H811 для изделий 8К51",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "24",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Машины горизонтальных испытаний 8Н14 для изделий 8К51",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "24",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Машины подготовки 8H29 для изделий 8К51",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "24",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Главные аппаратные машины для изделий 8К51",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "30",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Машины контрольно-выносного пункта 8415 для изделий 8К51",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "30",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Антенные прицепы 8Н416 для изделий 8К51",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "30",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Испытательные машины 8H417 для изделий 8К51",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "30",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Машины испытаний 8H16 для изделий 8К11 и 8A61",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "30",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Машины ЗИП технических позиций 8T339 для изделий 8K11 и 8A61",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "30",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Установщики 8У227 для изделий 8A61",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "3",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Транспортно-заряжающие машины ПР-11A",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "1900",
+        "consumer": "Moscow",
+        "type": "maintenance"
+    },
+    {
+        "item": "Железнодорожные заправщики горючего 8Г0119 для изделий 8К71",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "3",
+        "consumer": "Moscow",
+        "type": "maintenance"
+    },
+    {
+        "item": "Стационарные средства заправки горючим 8Г0124 для изделий 8К71",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "3",
+        "consumer": "Moscow",
+        "type": "maintenance"
+    },
+    {
+        "item": "Стационарные средства заправки воздухом 8Г0126 для изделий 8К71",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "3",
+        "consumer": "Moscow",
+        "type": "maintenance"
+    },
+    {
+        "item": "Стационарные средства за правки продуктом '0-30' 8Г0125 для изделий 8К71",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "3",
+        "consumer": "Moscow ",
+        "type": "maintenance"
+    },
+    {
+        "item": "Автоцистерны заправщики горючего 8Г114 для изделий 8A61",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "60",
+        "consumer": "Moscow ",
+        "type": "maintenance"
+    },
+    {
+        "item": "Автозаправщики горючего ЗАК-41 на автошасси ЗИЛ-157 для системы С-75",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "110",
+        "consumer": "Moscow ",
+        "type": "maintenance"
+    },
+    {
+        "item": "Передвижные компрессорные станции 8ГЗЗ",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "269",
+        "consumer": "Moscow",
+        "type": "maintenance"
+    },
+    {
+        "item": "Передвижные компрессорные воздушные станции СМ-14",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "77",
+        "consumer": "Moscow",
+        "type": "maintenance"
+    },
+    {
+        "item": "Стационарные воздушные компрессорные станции СМ-140 из 2-х компрессоров",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "5",
+        "consumer": "Moscow",
+        "type": "maintenance"
+    },
+    {
+        "item": "Стационарные воздушные компрессорные станции СМ-140 из 2-х компрессоров ",
+        "producer": "Kharkiv",
+        "unit": "комплект",
+        "quantity": "3",
+        "consumer": "RU",
+        "type": "maintenance"
+    },
+    {
+        "item": "Истребители МиГ-21ф",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "150",
+        "consumer": "Moscow",
+        "type": "air forces"
+    },
+    {
+        "item": "Топливоцистерны механизированные АЦМ-4-150 емкостью 4000 литров",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "1200",
+        "consumer": "Moscow",
+        "type": "maintenance"
+    },
+    {
+        "item": "Автоводомаслозаправщики BM3-151",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "1300",
+        "consumer": "Moscow",
+        "type": "maintenance"
+    },
+    {
+        "item": "Автомаслозаправщики емкостью 2500 литров",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "360",
+        "consumer": "Moscow",
+        "type": "maintenance"
+    },
+    {
+        "item": "14,5 мм спаренные зенитные пулеметные установки 3У-2",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "400",
+        "consumer": "Moscow",
+        "type": "weapons"
+    },
+    {
+        "item": "Прицелы ПБО к безоткатным орудиям",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "3100",
+        "consumer": "RU",
+        "type": "optics"
+    },
+    {
+        "item": "Прицелы ОП-4",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "11000",
+        "consumer": "RU",
+        "type": "optics"
+    },
+    {
+        "item": "Прицелы ОП1-14",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "1600",
+        "consumer": "RU",
+        "type": "optics"
+    },
+    {
+        "item": "Смотровые приборы МК-4",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "3530",
+        "consumer": "inbound",
+        "type": "optics"
+    },
+    {
+        "item": "Смотровые приборы МК-4",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "270",
+        "consumer": "Donets'k",
+        "type": "optics"
+    },
+    {
+        "item": "Ночные стрелковые прицелы НСП-2",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "2250",
+        "consumer": "Moscow",
+        "type": "optics"
+    },
+    {
+        "item": "Ночные танковые прицелы ТПН-1",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "1730",
+        "consumer": "inbound",
+        "type": "optics"
+    },
+    {
+        "item": "Ночные танковые прицелы ТПН-1",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "270",
+        "consumer": "Donets'k",
+        "type": "optics"
+    },
+    {
+        "item": "Ночные танковые смотровые приборы механика водителя ТВН-2",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "2000",
+        "consumer": "Moscow",
+        "type": "optics"
+    },
+    {
+        "item": "Ночные танковые смотровые приборы механика водителя ТВН-2",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "2200",
+        "consumer": "RU",
+        "type": "optics"
+    },
+    {
+        "item": "Ночные танковые смотровые приборы механика водителя ТВН-2",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "3530",
+        "consumer": "inbound",
+        "type": "optics"
+    },
+    {
+        "item": "Ночные танковые смотровые приборы механика водителя ТВН-2",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "270",
+        "consumer": "Donets'k",
+        "type": "optics"
+    },
+    {
+        "item": "Средние танки",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "3300",
+        "consumer": "Moscow",
+        "type": "tanks"
+    },
+    {
+        "item": "Гусеничные артиллерийские тягачи",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "5710",
+        "consumer": "Moscow",
+        "type": "tanks"
+    },
+    {
+        "item": "Гусеничные артиллерийские тягачи",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "390",
+        "consumer": "Kyiv",
+        "type": "tanks"
+    },
+    {
+        "item": "Тяжелые гусеничные арттягачи АТ-Т",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "650",
+        "consumer": "Moscow",
+        "type": "tanks"
+    },
+    {
+        "item": "Тяжелые гусеничные арттягачи АТ-Т",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "150",
+        "consumer": "Kyiv",
+        "type": "tanks"
+    },
+    {
+        "item": "Легкие гусеничные арттягачи АТ-Л",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "5060",
+        "consumer": "Moscow",
+        "type": "tanks"
+    },
+    {
+        "item": "Легкие гусеничные арттягачи АТ-Л",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "240",
+        "consumer": "Kyiv",
+        "type": "tanks"
+    },
+    {
+        "item": "Самолетные маркерные радиоприемники МРП-56",
+        "producer": "Kharkiv",
+        "unit": "компл.",
+        "quantity": "200",
+        "consumer": "UZB",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Самолетные маркерные радиоприемники МРП-56",
+        "producer": "Kharkiv",
+        "unit": "компл.",
+        "quantity": "300",
+        "consumer": "GE",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Самолетные маркерные радиоприемники МРП-56",
+        "producer": "Kharkiv",
+        "unit": "компл.",
+        "quantity": "7900",
+        "consumer": "RU",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Самолетные маркерные радиоприемники МРП-56",
+        "producer": "Kharkiv",
+        "unit": "компл.",
+        "quantity": "800",
+        "consumer": "Kyiv",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Самолетные маркерные радиоприемники МРП-56",
+        "producer": "Kharkiv",
+        "unit": "компл.",
+        "quantity": "200",
+        "consumer": "inbound",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Самолетные курсовые радиоприемники КРПФ",
+        "producer": "Kharkiv",
+        "unit": "компл.",
+        "quantity": "800",
+        "consumer": "Moscow",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Самолетные курсовые радиоприемники КРПФ",
+        "producer": "Kharkiv",
+        "unit": "компл.",
+        "quantity": "200",
+        "consumer": "UZB",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Самолетные курсовые радиоприемники КРПФ",
+        "producer": "Kharkiv",
+        "unit": "компл.",
+        "quantity": "1300",
+        "consumer": "RU",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Самолетные глиссадные радиоприемники ГРП-2",
+        "producer": "Kharkiv",
+        "unit": "компл.",
+        "quantity": "950",
+        "consumer": "Moscow",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Самолетные глиссадные радиоприемники ГРП-2",
+        "producer": "Kharkiv",
+        "unit": "компл.",
+        "quantity": "200",
+        "consumer": "UZB",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Самолетные глиссадные радиоприемники ГРП-2",
+        "producer": "Kharkiv",
+        "unit": "компл.",
+        "quantity": "1200",
+        "consumer": "RU",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Панорамные приемослежечные радиостанции Р-317 (Лента)",
+        "producer": "Kharkiv",
+        "unit": "компл.",
+        "quantity": "100",
+        "consumer": "Moscow",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Подвижные узлы слухового перехвата Р-322Б (Сирень)",
+        "producer": "Kharkiv",
+        "unit": "компл.",
+        "quantity": "20",
+        "consumer": "RU",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Радиопеленгаторы PПH-50",
+        "producer": "Kharkiv",
+        "unit": "компл.",
+        "quantity": "200",
+        "consumer": "RU",
+        "type": "radio/radars"
+    },
+    {
+        "item": "ФАБ-250 М-54",
+        "producer": "Kharkiv",
+        "unit": "тыс.шт",
+        "quantity": "16",
+        "consumer": "Dnipro",
+        "type": "air forces"
+    },
+    {
+        "item": "БРАБ-500",
+        "producer": "Kharkiv",
+        "unit": "тыс.шт",
+        "quantity": "0.6",
+        "consumer": "Donets'k",
+        "type": "air forces"
+    },
+    {
+        "item": "ЗАБ-250-200",
+        "producer": "Kharkiv",
+        "unit": "тыс.шт",
+        "quantity": "10",
+        "consumer": "RU",
+        "type": "air forces"
+    },
+    {
+        "item": "ФОТАБ-250-215 (комплектно с патронами)",
+        "producer": "Kharkiv",
+        "unit": "тыс.шт",
+        "quantity": "3",
+        "consumer": "RU",
+        "type": "air forces"
+    },
+    {
+        "item": "Корпуса 82 мм осколочных мин",
+        "producer": "Kharkiv",
+        "unit": "тыс.шт",
+        "quantity": "330",
+        "consumer": "Dnipro",
+        "type": "ammunition"
+    },
+    {
+        "item": "Корпуса 160 мм фугасных мин сталистого чугуна",
+        "producer": "Kharkiv",
+        "unit": "тыс.шт",
+        "quantity": "56",
+        "consumer": "RU",
+        "type": "ammunition"
+    },
+    {
+        "item": "Корпуса ручных гранат Ф-1",
+        "producer": "Kharkiv",
+        "unit": "тыс.шт",
+        "quantity": "300",
+        "consumer": "RU",
+        "type": "ammunition"
+    },
+    {
+        "item": "Корпуса ручных гранат PT-42",
+        "producer": "Kharkiv",
+        "unit": "тыс.шт",
+        "quantity": "1000",
+        "consumer": "RU",
+        "type": "ammunition"
+    },
+    {
+        "item": "Корпуса 82 мм кумулятивных мин в собранном виде к безоткатным орудиям Б-10 \"",
+        "producer": "Kharkiv",
+        "unit": "тыс.шт",
+        "quantity": "40",
+        "consumer": "RU",
+        "type": "ammunition"
+    },
+    {
+        "item": "Корпуса 82 мм кумулятивных мин в собранном виде к безоткатным орудиям Б-11\"",
+        "producer": "Kharkiv",
+        "unit": "тыс.шт",
+        "quantity": "150",
+        "consumer": "Donets'k",
+        "type": "ammunition"
+    },
+    {
+        "item": "Заряды для 85мм выстрелов с осколочным снарядом к дивизионным пушкам (уменьшенные)",
+        "producer": "Kharkiv",
+        "unit": "тыс.шт",
+        "quantity": "3000",
+        "consumer": "Moscow",
+        "type": "ammunition"
+    },
+    {
+        "item": "Заряды для 130 мм вистрелов с осколочно-фугасным снарядом к пушкам М-46",
+        "producer": "Kharkiv",
+        "unit": "тыс.шт",
+        "quantity": "100",
+        "consumer": "Moscow",
+        "type": "ammunition"
+    },
+    {
+        "item": "Заряды для 152 мм выстрелов с осколочно-фугасным снарядом к пушкам М-47",
+        "producer": "Kharkiv",
+        "unit": "тыс.шт",
+        "quantity": "300",
+        "consumer": "Moscow",
+        "type": "ammunition"
+    },
+    {
+        "item": "Гусеничные плавающие транспортеры К-61",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "720",
+        "consumer": "Moscow",
+        "type": "tanks"
+    },
+    {
+        "item": "Мостоукладчики типа МТУ на базе среднего танка",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "50",
+        "consumer": "Moscow",
+        "type": "engineering"
+    },
+    {
+        "item": "Траншеекопатели плужные ПЛТ-60",
+        "producer": "Kharkiv",
+        "unit": "компл.",
+        "quantity": "1270",
+        "consumer": "Moscow",
+        "type": "engineering"
+    },
+    {
+        "item": "Миноискатели УМИВ-1",
+        "producer": "Kharkiv",
+        "unit": "тыс. штук",
+        "quantity": "10",
+        "consumer": "Moscow",
+        "type": "engineering"
+    },
+    {
+        "item": "Истребители МиГ-21Ф",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "150",
+        "consumer": "inbound",
+        "type": "air forces"
+    },
+    {
+        "item": "Средние танки",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "3300",
+        "consumer": "inbound",
+        "type": "tanks"
+    },
+    {
+        "item": "Тяжелые шусеничные арттягачи АТ-Т",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "950",
+        "consumer": "inbound",
+        "type": "tanks"
+    },
+    {
+        "item": "Легкие гусеничные арттягачи АТ-Л",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "5650",
+        "consumer": "inbound",
+        "type": "tanks"
+    },
+    {
+        "item": "Вычислительные блоки ВБ-53В",
+        "producer": "Kharkiv",
+        "unit": "компл.",
+        "quantity": "11",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Автомат воздушной стрельбы АВС-53B",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "40",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Автоматы воздушной стрельбы ABC-53M",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "10",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Автомати воздушной стрельбы АБС-153",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "10",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Автоматы дополнительного параллакса АДП-53В",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "40",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Автоматы дополнительного параллакса АДП-53М",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "10",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Датчики скорости и плотности ДСП-53В",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "40",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Датчики скорости и плотности ДСП-53М",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "10",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Датчики скорости и плотности ДСП-153\"",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "10",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Датчики скорости и плотности АДП-153",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "10",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Вычислители скорости и плотности ВСП-53В",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "40",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Вычислители скорости и плотности ВСП-153",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "10",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Вычислители ВБ-456 самолета ЯК-26",
+        "producer": "Kharkiv",
+        "unit": "компл.",
+        "quantity": "5",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Вычислители ВСП-53М",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "10",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Постоянные сопротивления вычислительных блоков самолета ТУ-16",
+        "producer": "Kharkiv",
+        "unit": "компл.",
+        "quantity": "50",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Блоки потенциометров ПТВ-53",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "160",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Блоки потенциометров ПТБ-53",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "160",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Блоки концевых выключателей БК-53",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "110",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Блоки термореле БТ-53",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "110",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Блоки реле БР",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "105",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Блоки реле дополнительного параллакса БРД-53",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "50",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Электромагнитное реле P-9-53 B",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "200",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Группкомплект вычислителя ВБ-53В",
+        "producer": "Kharkiv",
+        "unit": "компл.",
+        "quantity": "60",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Усилители сигналов постоянного и переменного тока",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "5",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Усилители суммирующие",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "5",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Усилители гирореле",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "155",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Блоки питания БП-53В",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "55",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Механизмы обработки величин МД, МC, МТ, МИ, МП",
+        "producer": "Kharkiv",
+        "unit": "компл.",
+        "quantity": "130",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Групповой комплект ВБ-53М/Зм",
+        "producer": "Kharkiv",
+        "unit": "компл.",
+        "quantity": "2",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Групповой комплект BБ-153",
+        "producer": "Kharkiv",
+        "unit": "компл.",
+        "quantity": "2",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Вычислительные блоки ВБ-53В",
+        "producer": "Kharkiv",
+        "unit": "компл.",
+        "quantity": "60",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Вычислительные блоки ВБ-53В",
+        "producer": "Kharkiv",
+        "unit": "компл.",
+        "quantity": "20",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Вычислительные блоки ВБ-153",
+        "producer": "Kharkiv",
+        "unit": "компл.",
+        "quantity": "25",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Автоматы воздушной стрельби АВС-53B",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "40",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Автоматы воздушной стрельби АВС-53М",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "30",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Автоматы воздушной стрельби АВС-153",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "30",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Автоматы дополнителнительного параллакса АДП-53В",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "55",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Автоматы дополнителнительного параллакса АДП-53М",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "30",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Датчики скорости и плотности ДСП-53",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "55",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Вычислители ВСП-53В",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "55",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Вычислители ВСП-53М",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "30",
+        "consumer": "Moscow",
+        "type": "computation"
+    },
+    {
+        "item": "Смотровой прибор MK-4",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "3000",
+        "consumer": "Moscow",
+        "type": "optics"
+    },
+    {
+        "item": "Верхняя призма в оправе МК-4 сб.1-2",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "5000",
+        "consumer": "Moscow",
+        "type": "optics"
+    },
+    {
+        "item": "Призма передвижная в оправе МК 4 Сб.14",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "5000",
+        "consumer": "Moscow",
+        "type": "optics"
+    },
+    {
+        "item": "Нижняя призма в оправе МК-4 сб.14",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "5000",
+        "consumer": "Moscow",
+        "type": "optics"
+    },
+    {
+        "item": "Проекционная насадка ПН-12",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "300",
+        "consumer": "Moscow",
+        "type": "optics"
+    },
+    {
+        "item": "Полетные очки ПО-1м в комплекте с запасными стеклами",
+        "producer": "Kharkiv",
+        "unit": "компл.",
+        "quantity": "30000",
+        "consumer": "Moscow",
+        "type": "optics"
+    },
+    {
+        "item": "Технические очки ТО-1",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "40000",
+        "consumer": "Moscow",
+        "type": "optics"
+    },
+    {
+        "item": "Защитные очки ОЗ",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "20000",
+        "consumer": "Moscow",
+        "type": "optics"
+    },
+    {
+        "item": "Оптическое стекло",
+        "producer": "Kharkiv",
+        "unit": "тонн",
+        "quantity": "150",
+        "consumer": "Moscow",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Трубки ТВ-85, TB-100",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "300",
+        "consumer": "Moscow",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Трубки ТВ-200",
+        "producer": "Kharkiv",
+        "unit": "штук",
+        "quantity": "400",
+        "consumer": "Moscow",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Узлы, агрегаты и детали танка Т-54",
+        "producer": "Kharkiv",
+        "unit": "млн.руб ",
+        "quantity": "30",
+        "consumer": "Donets'k",
+        "type": "tanks"
+    },
+    {
+        "item": "Гусеницы в сборе для танков и тяжелых арттягачей",
+        "producer": "Kharkiv",
+        "unit": "компл. ",
+        "quantity": "5300",
+        "consumer": "Donets'k",
+        "type": "tanks"
+    }
+]

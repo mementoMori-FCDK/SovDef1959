@@ -16,19 +16,33 @@
   <div id="container">
     <div class="mapContainer">
       <div class="overlay">
-        <h2 id="map-label">SovDef1959</h2>
-        <label for="current-region" id="map-label">Current region</label>
-        <input type="text" id="current-region" value="loh">
+        <div class="overlay-info">
+          <h2 id="map-label">SovDef1959</h2>
+          <label for="current-region" id="map-label">Current RES</label>
+          <input type="text" id="current-region" readonly><br />
+          <h2>RES - Regional Economic Soviet</h2>
+        </div>
+        <div class="overlay-controls">
+          <button type="button" id="map-reset">Reset Map</button>
+          <div class="dropdown">
+            <button id="dropdown-button">RES select &#x2BC6</button>
+            <div id="res-list"></div>
+          </div>
+        </div>
       </div>
       <div id="map"></div>
     </div>
-    <div id="placeholder"></div>
     <div id="info">
       <div class="welcome">
-        
+        <div id="welcome-message">
+          <h1>Welcome to the SovDef1959 project</h1>
+          <h2>Select a Regional Economic Soviet to see the detailed information</h2>
+          <h2>Use "Reset" button to get back to the base layer</h2>
+        </div>
       </div>
-      <div class="table" id="flex-table">
-        <div class="row header">
+      <div class="producer-legend"></div>
+      <div class="table" id="flex-table" style="display: none">
+        <div class="header">
           <div class="col item">Item</div>
           <div class="col">Unit</div>
           <div class="col">Quantity</div>

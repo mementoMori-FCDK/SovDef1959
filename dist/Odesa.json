@@ -1,0 +1,50 @@
+﻿[
+    {
+        "item": "Самоходные краны К-252м в специальном исполнении для изделий 8К71",
+        "producer": "Odesa",
+        "unit": "штук",
+        "quantity": "11",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Машины подвижных углов связи автомобильные",
+        "producer": "Odesa",
+        "unit": "машин",
+        "quantity": "298",
+        "consumer": "Moscow",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Корпуса авиабомб АО-1",
+        "producer": "Odesa",
+        "unit": "тыс.шт",
+        "quantity": "1000",
+        "consumer": "RU",
+        "type": "air forces"
+    },
+    {
+        "item": "Корпуса 82 мм осколочных мин",
+        "producer": "Odesa",
+        "unit": "тыс.шт",
+        "quantity": "140",
+        "consumer": "Dnipro",
+        "type": "ammunition"
+    },
+    {
+        "item": "Корпуса 82 мм кумулятивных мин в собранном виде к безоткатным орудиям Б-10 \"",
+        "producer": "Odesa",
+        "unit": "тыс.шт",
+        "quantity": "45",
+        "consumer": "RU",
+        "type": "ammunition"
+    },
+    {
+        "item": "Корпуса 82 мм кумулятивных мин в собранном виде к безоткатным орудиям Б-10",
+        "producer": "Odesa",
+        "unit": "тыс.шт",
+        "quantity": "165",
+        "consumer": "Donetsk",
+        "type": "ammunition"
+    }
+]

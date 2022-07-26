@@ -4,804 +4,839 @@
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "50",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "rockets"
     },
     {
         "item": "К-51",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "5000",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "rockets"
     },
     {
         "item": "К-5М",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "500",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "rockets"
     },
     {
-        "item": "Бортовая аппаратура автономной системы управления с бортовой кабельной сетью,бортовой кабельной сетью двигателя и групповым ЗИПом для изделий 8К63",
+        "item": "Бортовая аппаратура автономной системы управления для изделий 8К63",
         "producer": "Kyiv",
         "unit": "комплект",
         "quantity": "100",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "rockets"
     },
     {
-        "item": "Бортовая аппаратура автономной системы управления с бортовои кабельой сетью для машин 8T310 - изделий 8К63 ",
+        "item": "Бортовая аппаратура автономной системы управления 8T310 - изделий 8К63",
         "producer": "Kyiv",
         "unit": "комплект",
         "quantity": "34",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "rockets"
     },
     {
-        "item": "Бортовая аппаратура автономной системы управления с бортовой кабельной сетью для машин 8T331 изделий 8К63",
+        "item": "Бортовая аппаратура автономной системы управления для машин 8T331 изделий 8К63",
         "producer": "Kyiv",
         "unit": "комплект",
         "quantity": "31",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "rockets"
     },
     {
-        "item": "Радиолокационные станции ЯР с соглосующими и антеннофидерными устройствами для изделий Х-20",
+        "item": "Радиолокационные станции ЯР для изделий Х-20",
         "producer": "Kyiv",
         "unit": "комплект",
         "quantity": "95",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "rockets"
     },
     {
-        "item": "Машины автономных испытаний 8Н112 для изделий 8К63 ",
+        "item": "Машины автономных испытаний 8Н112 для изделий 8К63",
         "producer": "Kyiv",
         "unit": "комплект",
         "quantity": "48",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "rockets"
     },
     {
         "item": "Машины горизонтальных испытаний 8Н113 для изделий 8К63",
         "producer": "Kyiv",
         "unit": "комплект",
         "quantity": "48",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "rockets"
     },
     {
         "item": "Машины предпусковой подготовки и пуска 8H213 для изделий 8K63",
         "producer": "Kyiv",
         "unit": "комплект",
         "quantity": "48",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "rockets"
     },
     {
         "item": "Контрольно-проверочная аппаратура ЯД-100 на ЗИЛ-157 для системы К-20",
         "producer": "Kyiv",
         "unit": "комплект",
         "quantity": "3",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "rockets"
     },
     {
         "item": "Контрольно-проверочная аппаратура ЯД-100 на ЗИЛ-157 для системы К-20",
         "producer": "Kyiv",
         "unit": "комплект",
         "quantity": "2",
-        "consumer": "RU"
+        "consumer": "RU",
+        "type": "rockets"
     },
     {
         "item": "Контрольно-проверочная аппаратура ЯД-100 на ЗИЛ-157 для системы К-21",
         "producer": "Kyiv",
         "unit": "комплект",
         "quantity": "4",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "rockets"
     },
     {
         "item": "Контрольно-проверочная аппаратура ЯД-100 на ЗИЛ-157 для системы К-21",
         "producer": "Kyiv",
         "unit": "комплект",
         "quantity": "2",
-        "consumer": "RU"
+        "consumer": "RU",
+        "type": "rockets"
     },
     {
-        "item": "Контрольно-проверочная аппаратура ЯР-100А для изделий Х-20 ",
+        "item": "Контрольно-проверочная аппаратура ЯР-100А для изделий Х-20",
         "producer": "Kyiv",
         "unit": "комплект",
         "quantity": "2",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "rockets"
     },
     {
-        "item": "Контрольно-проверочная аппаратура ЯР-100А для изделий Х-20 ",
+        "item": "Контрольно-проверочная аппаратура ЯР-100А для изделий Х-20",
         "producer": "Kyiv",
         "unit": "комплект",
         "quantity": "1",
-        "consumer": "RU"
+        "consumer": "RU",
+        "type": "rockets"
     },
     {
         "item": "Приборы прицеливания 8Ш12",
         "producer": "Kyiv",
         "unit": "комплект",
         "quantity": "79",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "optics"
     },
     {
         "item": "Приборы прицеливания 8Ш12",
         "producer": "Kyiv",
         "unit": "комплект",
         "quantity": "62",
-        "consumer": "RU"
+        "consumer": "RU",
+        "type": "optics"
     },
     {
         "item": "Приборы прицеливания 8Ш14 для изделий 8К63",
         "producer": "Kyiv",
         "unit": "комплект",
         "quantity": "62",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "optics"
     },
     {
         "item": "Приборы прицеливания 8Ш15",
         "producer": "Kyiv",
         "unit": "комплект",
         "quantity": "4",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "optics"
     },
     {
         "item": "Приборы наведения ПП-13",
         "producer": "Kyiv",
         "unit": "комплект",
         "quantity": "10",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "optics"
     },
     {
         "item": "Приборы прицеливания ПП-11",
         "producer": "Kyiv",
         "unit": "комплект",
         "quantity": "5",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "optics"
     },
     {
         "item": "Пусковые столы 8У217 для изделий 8К63",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "54",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "rockets"
     },
     {
         "item": "Пусковые столы 8У212 для изделий 8К51",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "35",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "rockets"
     },
     {
-        "item": "Воздухозаправщики МС-4 на автомобилях ЗИЛ-157 с комплектом запасных шлангов ",
+        "item": "Воздухозаправщики МС-4 на автомобилях ЗИЛ-157 с комплектом запасных шлангов",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "191",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "maintenance"
     },
     {
         "item": "Машины с кабелями тП 82Н18 для изделий 8К63",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "48",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "rockets"
     },
     {
         "item": "Машины с кабелями тП 82Н18 для изделий 8К63",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "6",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "rockets"
     },
     {
         "item": "Транспортно-десантные самолеты АН-2",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "700",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "air forces"
     },
     {
         "item": "Топливозаправщики ТЗ-150 емкостью 4000 литров",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "2150",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "maintenance"
     },
     {
         "item": "Топливоцистерны АЦ- 8-200 емкостью 8000 литров",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "400",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "maintenance"
     },
     {
         "item": "Топливоцистерны АЦ-4-150 емкостью 4000 литров",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "1000",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "maintenance"
     },
     {
         "item": "Топливоцистерны механизи рованные АЦМ-4-150 емкостью 4000 литров",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "1200",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "maintenance"
     },
     {
         "item": "Автоводомаслозаправщики BM3-151",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "1300",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "maintenance"
     },
     {
-        "item": "Автомаслозаправщики емкостью 2500 литров ",
+        "item": "Автомаслозаправщики емкостью 2500 литров",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "360",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "maintenance"
     },
     {
-        "item": "Прицелы К10-Т ",
+        "item": "Прицелы К10-Т",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "7300",
-        "consumer": "RU"
+        "consumer": "RU",
+        "type": "optics"
     },
     {
-        "item": "Прицелы К10-Т ",
+        "item": "Прицелы К10-Т",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "3525",
-        "consumer": "Kharkiv"
+        "consumer": "Kharkiv",
+        "type": "optics"
     },
     {
-        "item": "Прицелы К10-Т ",
+        "item": "Прицелы К10-Т",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "275",
-        "consumer": "Donetsk"
+        "consumer": "Donetsk",
+        "type": "optics"
     },
     {
-        "item": "Прицелы АСП-5НМ И АСП-5Н-В4 ",
+        "item": "Прицелы АСП-5НМ И АСП-5Н-В4",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "300",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "optics"
     },
     {
         "item": "Прицелы АСП-5НМ И АСП-5Н-В5",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "1500",
-        "consumer": "RU"
+        "consumer": "RU",
+        "type": "optics"
     },
     {
         "item": "Прицелы АСП-5НМ И АСП-5Н-В6",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "300",
-        "consumer": "GA"
+        "consumer": "GA",
+        "type": "optics"
     },
     {
         "item": "Прицелы АСП-5НМ И АСП-5Н-В7",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "200",
-        "consumer": "Kharkiv"
+        "consumer": "Kharkiv",
+        "type": "optics"
     },
     {
         "item": "Прицел АСП-51",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "2000",
-        "consumer": "RU"
+        "consumer": "RU",
+        "type": "optics"
     },
     {
-        "item": "Прицелы К10-Т ",
+        "item": "Прицелы К10-Т",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "7300",
-        "consumer": "RU"
+        "consumer": "RU",
+        "type": "optics"
     },
     {
-        "item": "Прицелы К10-Т ",
+        "item": "Прицелы К10-Т",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "3525",
-        "consumer": "Kharkiv"
+        "consumer": "Kharkiv",
+        "type": "optics"
     },
     {
-        "item": "Прицелы К10-Т ",
+        "item": "Прицелы К10-Т",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "275",
-        "consumer": "Donetsk"
+        "consumer": "Donetsk",
+        "type": "optics"
     },
     {
-        "item": "Прицелы АСП-5НМ И АСП-5Н-В4 ",
+        "item": "Прицелы АСП-5НМ И АСП-5Н-В4",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "300",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "optics"
     },
     {
         "item": "Прицелы АСП-5НМ И АСП-5Н-В5",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "1500",
-        "consumer": "RU"
+        "consumer": "RU",
+        "type": "optics"
     },
     {
         "item": "Прицелы АСП-5НМ И АСП-5Н-В6",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "300",
-        "consumer": "GA"
+        "consumer": "GA",
+        "type": "optics"
     },
     {
         "item": "Прицелы АСП-5НМ И АСП-5Н-В7",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "200",
-        "consumer": "Kharkiv"
+        "consumer": "Kharkiv",
+        "type": "optics"
     },
     {
         "item": "Прицел АСП-51",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "2000",
-        "consumer": "RU"
+        "consumer": "RU",
+        "type": "optics"
     },
     {
-        "item": "\"Подвижные радиолокационные артиллерийские станции АРСОМ-2 и АРСОМ-2П (\"\"Марс\"\")\"",
+        "item": "Подвижные радиолокационные артиллерийские станции АРСОМ-2 и АРСОМ-2П (Марс)",
         "producer": "Kyiv",
         "unit": "комплект",
         "quantity": "200",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "radio/radars"
     },
     {
         "item": "Самолетные радиолокационные бомбардировочные прицелы РПБ-3 (ПСБН-МА)",
         "producer": "Kyiv",
         "unit": "комплект",
         "quantity": "300",
-        "consumer": "RU"
+        "consumer": "RU",
+        "type": "optics"
     },
     {
         "item": "Самолетные радиолокационные бомбардировочные прицелы РПБ-3 (ПСБН-МА)",
         "producer": "Kyiv",
         "unit": "комплект",
         "quantity": "200",
-        "consumer": "UZB"
+        "consumer": "UZB",
+        "type": "optics"
     },
     {
         "item": "Самолетные радиолокационные станции разведки и помех",
         "producer": "Kyiv",
         "unit": "компл.",
         "quantity": "510",
-        "consumer": "RU"
+        "consumer": "RU",
+        "type": "radio/radars"
     },
     {
-        "item": "\"Самолетные радиолокационне станции помех СПС-2 (\"\"Натрий\"\")\"",
+        "item": "Самолетные радиолокационне станции помех СПС-2 ('Натрий')",
         "producer": "Kyiv",
         "unit": "компл.",
         "quantity": "360",
-        "consumer": "RU"
+        "consumer": "RU",
+        "type": "radio/radars"
     },
     {
-        "item": "\"Самолетные радиолокационные приборы \"\"Сирена-2\"\" и \"\"Сирена-3\"\"\"",
+        "item": "Самолетные радиолокационные приборы 'Сирена-2' и 'Сирена-3'",
         "producer": "Kyiv",
         "unit": "компл.",
         "quantity": "2000",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "radio/radars"
     },
     {
-        "item": "\"Самолетные радиолокационные приборы \"\"Сирена-2\"\" и \"\"Сирена-3\"\"\"",
+        "item": "Самолетные радиолокационные приборы 'Сирена-2' и 'Сирена-3'",
         "producer": "Kyiv",
         "unit": "компл.",
         "quantity": "200",
-        "consumer": "UZB"
+        "consumer": "UZB",
+        "type": "radio/radars"
     },
     {
-        "item": "\"Самолетные радиолокационные приборы \"\"Сирена-2\"\" и \"\"Сирена-3\"\"\"",
+        "item": "Самолетные радиолокационные приборы 'Сирена-2' и 'Сирена-3'",
         "producer": "Kyiv",
         "unit": "компл.",
         "quantity": "300",
-        "consumer": "GA"
+        "consumer": "GA",
+        "type": "radio/radars"
     },
     {
-        "item": "\"Самолетные радиолокационные приборы \"\"Сирена-2\"\" и \"\"Сирена-3\"\"\"",
+        "item": "Самолетные радиолокационные приборы 'Сирена-2' и 'Сирена-3'",
         "producer": "Kyiv",
         "unit": "компл.",
         "quantity": "7325",
-        "consumer": "RU"
+        "consumer": "RU",
+        "type": "radio/radars"
     },
     {
-        "item": "\"Самолетные радиолокационные приборы \"\"Сирена-2\"\" и \"\"Сирена-3\"\"\"",
+        "item": "Самолетные радиолокационные приборы 'Сирена-2' и 'Сирена-3'",
         "producer": "Kyiv",
         "unit": "компл.",
         "quantity": "175",
-        "consumer": "Kharkiv"
+        "consumer": "Kharkiv",
+        "type": "radio/radars"
     },
     {
         "item": "Самолетные ответчики СОД-57",
         "producer": "Kyiv",
         "unit": "компл.",
         "quantity": "500",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "radio/radars"
     },
     {
         "item": "Самолетные ответчики СОД-57",
         "producer": "Kyiv",
         "unit": "компл.",
         "quantity": "300",
-        "consumer": "GA"
+        "consumer": "GA",
+        "type": "radio/radars"
     },
     {
         "item": "Самолетные ответчики СОД-57",
         "producer": "Kyiv",
         "unit": "компл.",
         "quantity": "200",
-        "consumer": "Kharkiv"
+        "consumer": "Kharkiv",
+        "type": "radio/radars"
     },
     {
         "item": "Радиогидроакустические буи типа РГБ-Н",
         "producer": "Kyiv",
         "unit": "компл.",
         "quantity": "10000",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "ships/naval forces"
     },
     {
         "item": "Рейдовые тральщики",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "1",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "ships/naval forces"
     },
     {
-        "item": "\"Электроакустические взрыватели \"\"Краб\"\"\"",
+        "item": "Электроакустические взрыватели 'Краб'",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "3500",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "ships/naval forces"
     },
     {
         "item": "Быстроходные акустические отводители кораблей БОКА",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "750",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "ships/naval forces"
     },
     {
         "item": "Корпуса 57мм осколочно-трассирующих снарядов к пушкам С-60",
         "producer": "Kyiv",
         "unit": "тыс.шт",
         "quantity": "320",
-        "consumer": "RU"
+        "consumer": "RU",
+        "type": "ammunition"
     },
     {
         "item": "Корпуса 152 мм осколочно-фугасных гранат к пушкам-гаубицам, обр. 1937 г.",
         "producer": "Kyiv",
         "unit": "тыс.шт",
         "quantity": "640",
-        "consumer": "inbound"
+        "consumer": "inbound",
+        "type": "ammunition"
     },
     {
         "item": "Корпуса 152мм осколочно-фугасных гранат к пушкам-гаубицам Д-20",
         "producer": "Kyiv",
         "unit": "тыс.шт",
         "quantity": "210",
-        "consumer": "inbound"
+        "consumer": "inbound",
+        "type": "ammunition"
     },
     {
         "item": "Корпуса 152 мм химических снарядов к гаубицам-пушкам обр. 1937г.",
         "producer": "Kyiv",
         "unit": "тыс.шт",
         "quantity": "60",
-        "consumer": "RU"
+        "consumer": "RU",
+        "type": "ammunition"
     },
     {
         "item": "Корпуса авиабомб АО-1",
         "producer": "Kyiv",
         "unit": "тыс.шт",
         "quantity": "1000",
-        "consumer": "RU"
+        "consumer": "RU",
+        "type": "ammunition"
     },
     {
         "item": "Корпуса авиабомб 3АБ-100-114 (комплектно с патронами)",
         "producer": "Kyiv",
         "unit": "тыс.шт",
         "quantity": "50",
-        "consumer": "RU"
+        "consumer": "RU",
+        "type": "ammunition"
     },
     {
-        "item": "Корпуса противопехотных мин ПМД-6М (комплектно с чеками и шпильками) ",
+        "item": "Корпуса противопехотных мин ПМД-6М (комплектно с чеками и шпильками)",
         "producer": "Kyiv",
         "unit": "тыс.шт",
         "quantity": "360",
-        "consumer": "RU"
+        "consumer": "RU",
+        "type": "ammunition"
     },
     {
-        "item": "Карабины к противопехотным минам ПОМЗ-2М ",
+        "item": "Карабины к противопехотным минам ПОМЗ-2М",
         "producer": "Kyiv",
         "unit": "тыс.шт",
         "quantity": "100",
-        "consumer": "Vinnytsia"
+        "consumer": "Vinnytsia",
+        "type": "ammunition"
     },
     {
         "item": "Разовые бомбовые кассеты РБК-500-375",
         "producer": "Kyiv",
         "unit": "тыс.шт",
         "quantity": "9",
-        "consumer": "RU"
+        "consumer": "RU",
+        "type": "ammunition"
     },
     {
-        "item": "Корпуса 160 мм фугасных мин сталистого чугуна ",
+        "item": "Корпуса 160 мм фугасных мин сталистого чугуна",
         "producer": "Kyiv",
         "unit": "тыс.шт",
         "quantity": "144",
-        "consumer": "RU"
+        "consumer": "RU",
+        "type": "ammunition"
     },
     {
-        "item": "Корпуса ручных гранат Ф-1 ",
+        "item": "Корпуса ручных гранат Ф-1",
         "producer": "Kyiv",
         "unit": "тыс.шт",
         "quantity": "2800",
-        "consumer": "RU"
+        "consumer": "RU",
+        "type": "ammunition"
     },
     {
         "item": "Корпуса 82 мм осколочных в собранном виде к безоткатным орудиям Б-10",
         "producer": "Kyiv",
         "unit": "тыс.шт",
         "quantity": "60",
-        "consumer": "RU"
+        "consumer": "RU",
+        "type": "ammunition"
     },
     {
-        "item": "Корпуса 82 мм кумулятивных мин в собранном виде к безоткатным орудиям Б-10 ",
+        "item": "Корпуса 82 мм кумулятивных мин в собранном виде к безоткатным орудиям Б-10",
         "producer": "Kyiv",
         "unit": "тыс.шт",
         "quantity": "30",
-        "consumer": "RU"
+        "consumer": "RU",
+        "type": "ammunition"
     },
     {
-        "item": "Корпуса 82 мм кумулятивных мин в собранном виде к безоткатным орудиям Б-10 ",
+        "item": "Корпуса 82 мм кумулятивных мин в собранном виде к безоткатным орудиям Б-10",
         "producer": "Kyiv",
         "unit": "тыс.шт",
         "quantity": "60",
-        "consumer": "Donetsk"
+        "consumer": "Donetsk",
+        "type": "ammunition"
     },
     {
         "item": "Взрыватели МГЗ-57",
         "producer": "Kyiv",
         "unit": "тыс.шт",
         "quantity": "690",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "ammunition"
     },
     {
         "item": "Лодки десантные ЛД-10",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "800",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "ships/naval forces"
     },
     {
         "item": "Екскаваторы роторные траншейные ЭТР-152",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "350",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "engineering"
     },
     {
         "item": "Путепрокладчики типа БАТ на арттягачах АТ-Т",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "150",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "engineering"
     },
     {
         "item": "Бульдозеры танковые унэиверсальные БТУ",
         "producer": "Kyiv",
         "unit": "компл.",
         "quantity": "200",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "engineering"
     },
     {
         "item": "Прицепные минные раскладчики ПМР-3",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "3000",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "engineering"
     },
     {
         "item": "Транспортные самолеты Ан-2",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "700",
-        "consumer": "inbound"
+        "consumer": "inbound",
+        "type": "air forces"
     },
     {
         "item": "Управляемые авиационные снаряды К-8",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "50",
-        "consumer": "inbound"
+        "consumer": "inbound",
+        "type": "air forces"
     },
     {
         "item": "Управляемые авиационные снаряды К-51",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "5000",
-        "consumer": "inbound"
+        "consumer": "inbound",
+        "type": "air forces"
     },
     {
         "item": "Управляемые авиационные снаряды К-5М",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "500",
-        "consumer": "inbound"
+        "consumer": "inbound",
+        "type": "air forces"
     },
     {
         "item": "Рейдовые тральщики",
         "producer": "Kyiv",
-        "unit": "Киевский",
+        "unit": "штук",
         "quantity": "1",
-        "consumer": "inbound"
-    },
-    {
-        "item": "ЗИП к разведывательным теодолитам РТ-2",
-        "producer": "Kyiv",
-        "unit": "тыс.руб. ",
-        "quantity": "433",
-        "consumer": "Moscow"
-    },
-    {
-        "item": "ЗИП к прицелам К10-Т",
-        "producer": "Kyiv",
-        "unit": "тыс.руб. ",
-        "quantity": "1004",
-        "consumer": "Moscow"
+        "consumer": "inbound",
+        "type": "ships/naval forces"
     },
     {
         "item": "Авиаприцелы АСП-4Н",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "60",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "air forces"
     },
     {
         "item": "Авиаприцелы АСП-5H под СИВ-52",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "25",
-        "consumer": "Moscow"
-    },
-    {
-        "item": "Группконплект АСП-5Н ремонтный",
-        "producer": "Kyiv",
-        "unit": "компл.",
-        "quantity": "100",
-        "consumer": "Moscow"
-    },
-    {
-        "item": "Эксплуатационныи группкомплект АСП-5Н",
-        "producer": "Kyiv",
-        "unit": "компл.",
-        "quantity": "100",
-        "consumer": "Moscow"
-    },
-    {
-        "item": "Группкомплект АСП-4Н ремонтный",
-        "producer": "Kyiv",
-        "unit": "компл.",
-        "quantity": "60",
-        "consumer": "Moscow"
-    },
-    {
-        "item": "Эксплуатационный группкомплект АСП-4Н",
-        "producer": "Kyiv",
-        "unit": "компл.",
-        "quantity": "50",
-        "consumer": "Moscow"
-    },
-    {
-        "item": "Стрелковый тренажер СТЛ-1м",
-        "producer": "Kyiv",
-        "unit": "штук",
-        "quantity": "50",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "air forces"
     },
     {
         "item": "Бомбардировочный тренажер УТБ-3",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "100",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "air forces"
     },
     {
         "item": "Стабилизатор CH-4",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "175",
-        "consumer": "Moscow"
-    },
-    {
-        "item": "Группкомплект тренажеpa СТЛ - 1м",
-        "producer": "Kyiv",
-        "unit": "компл.",
-        "quantity": "20",
-        "consumer": "Moscow"
-    },
-    {
-        "item": "Группкомплект тренажеpa СТЛ - 1мс",
-        "producer": "Kyiv",
-        "unit": "компл.",
-        "quantity": "30",
-        "consumer": "Moscow"
-    },
-    {
-        "item": "Группкомплект тренажеpa УТБ-Зм",
-        "producer": "Kyiv",
-        "unit": "компл.",
-        "quantity": "30",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "air forces"
     },
     {
         "item": "Контрольно-поверочная аппаратура КП-4",
         "producer": "Kyiv",
         "unit": "компл.",
         "quantity": "55",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "maintenance"
     },
     {
         "item": "Контрольно-поверочная аппаратура КП-5см",
         "producer": "Kyiv",
         "unit": "компл.",
         "quantity": "160",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "maintenance"
     },
     {
         "item": "Контрольно-юстировочная аппаратура РКП-5",
         "producer": "Kyiv",
         "unit": "компл.",
         "quantity": "10",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "maintenance"
     },
     {
         "item": "Инструмент и приспособления для ремонта и регулировки АСП-4н",
         "producer": "Kyiv",
         "unit": "компл.",
         "quantity": "40",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "maintenance"
     },
     {
         "item": "Авиационный стрелковый прицел АСП-4H учебный",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "50",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "air forces"
     },
     {
         "item": "Авиационный стрелковый прицел АСП-5н учебный",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "80",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "air forces"
     },
     {
         "item": "Авиационный стрелковый прицел АСП-5н разрезной",
         "producer": "Kyiv",
         "unit": "штук",
         "quantity": "150",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "air forces"
     },
     {
         "item": "Инфракрасный визир СИВ-52 с элементом сопряжения АСП-4н с индивидуальным ЗИП-ом",
         "producer": "Kyiv",
         "unit": "компл.",
         "quantity": "100",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "optics"
     },
     {
         "item": "Мотоциклы М-72",
         "producer": "Kyiv",
         "unit": "шт.",
         "quantity": "6000",
-        "consumer": "Moscow"
+        "consumer": "Moscow",
+        "type": "transport"
     }
 ]

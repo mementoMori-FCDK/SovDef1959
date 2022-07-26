@@ -1,0 +1,130 @@
+﻿[
+    {
+        "item": "Бортовая телеметрическая аппаратура 'Трал' для изделий 8К71",
+        "producer": "Lviv",
+        "unit": "комплект",
+        "quantity": "80",
+        "consumer": "RU",
+        "type": "rockets"
+    },
+    {
+        "item": "Автопогрузчики для подъема изделий В-750 и ускорителей ПРД-18р",
+        "producer": "Lviv",
+        "unit": "штук",
+        "quantity": "116",
+        "consumer": "Moscow",
+        "type": "maintenance"
+    },
+    {
+        "item": "Радиостанции СРКС-0,08 и ПАРКС-0,08",
+        "producer": "Lviv",
+        "unit": "компл.",
+        "quantity": "274",
+        "consumer": "RU",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Радиостанции СРКС-0,08 и ПАРКС-0,08",
+        "producer": "Lviv",
+        "unit": "компл.",
+        "quantity": "6",
+        "consumer": "Kherson",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Телеграфные аппараты Т-100 (Бодо)",
+        "producer": "Lviv",
+        "unit": "компл.",
+        "quantity": "300",
+        "consumer": "Moscow",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Телеграфные аппараты Т-100 (Бодо)",
+        "producer": "Lviv",
+        "unit": "компл.",
+        "quantity": "200",
+        "consumer": "Odesa",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Фототелеграфные аппараты П-106 ('Орел', 'Экран' и 'Аппатит')",
+        "producer": "Lviv",
+        "unit": "компл.",
+        "quantity": "5",
+        "consumer": "RU",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Фототелеграфные аппараты П-106 ('Орел', 'Экран' и 'Аппатит')",
+        "producer": "Lviv",
+        "unit": "компл.",
+        "quantity": "295",
+        "consumer": "Moscow",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Фототелеграфные аппараты П-106 ('Орел', 'Экран' и 'Аппатит')",
+        "producer": "Lviv",
+        "unit": "компл.",
+        "quantity": "5",
+        "consumer": "Kherson",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Аппаратура тонального телеграфирования П-314 ('Цепь')",
+        "producer": "Lviv",
+        "unit": "компл.",
+        "quantity": "200",
+        "consumer": "Moscow",
+        "type": "radio/radars"
+    },
+    {
+        "item": "САБ-100-90",
+        "producer": "Lviv",
+        "unit": "тыс.шт",
+        "quantity": "5",
+        "consumer": "RU",
+        "type": "air forces"
+    },
+    {
+        "item": "ДАБ-100-90",
+        "producer": "Lviv",
+        "unit": "тыс.шт",
+        "quantity": "8",
+        "consumer": "RU",
+        "type": "air forces"
+    },
+    {
+        "item": "Универсальные резонансные волномеры УBP-1",
+        "producer": "Lviv",
+        "unit": "штук",
+        "quantity": "200",
+        "consumer": "Moscow",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Резонансные волномеры РВД",
+        "producer": "Lviv",
+        "unit": "штук",
+        "quantity": "100",
+        "consumer": "Moscow",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Гетеродинные волномеры ВГ-526 и BГ-528",
+        "producer": "Lviv",
+        "unit": "штук",
+        "quantity": "4000",
+        "consumer": "Moscow",
+        "type": "radio/radars"
+    },
+    {
+        "item": "Кварцевые калибраторы KК-4, KK-6",
+        "producer": "Lviv",
+        "unit": "штук",
+        "quantity": "3250",
+        "consumer": "Moscow",
+        "type": "radio/radars"
+    }
+]

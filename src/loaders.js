@@ -12,9 +12,9 @@ const loadRegions = async () => {
     }
   };
 
-  const loadProduction = async (ProdRegion) => {
+  const loadProduction = async (prodRegion) => {
     try{
-      const response = await fetch(`/${ProdRegion}.json`);
+      const response = await fetch(`/${prodRegion}.json`);
       if(response.ok) {
         return await response.json();
       }
@@ -24,21 +24,32 @@ const loadRegions = async () => {
     }
   };
 
-  async function GenerateInfo(ProdRegion) {
-    let arr = await loadProduction(ProdRegion)
+  async function GenerateInfo(prodRegion) {
+    let arr = await loadProduction(prodRegion)
     .then(data => arr = data).catch(error => console.log(error));
-
-    let tabs = new Set();
-
+    let tabs = new Set();     //array of production types
+    let dict = {};            //dict of production types
+    //fill set with types
     arr.forEach(element => {
       if(!tabs.has(element.type)) tabs.add(element.type);
     });
-
-    console.log(tabs);
+    //create dictionary
+    tabs.forEach(type => {
+      dict[type] = CalculateTotalByType(arr, type);
+    })
+    return dict;
   };
 
-  async function GenerateTable(ProdRegion){
-    let arr = await loadProduction(ProdRegion)
+  function CalculateTotalByType(array, type) {
+    let result  = 0;
+    array.forEach(element => {
+       if(element.type === type) result ++;
+    });
+    return result;
+  };
+
+  async function GenerateTable(prodRegion){
+    let arr = await loadProduction(prodRegion)
     .then(data => arr = data).catch(error => console.log(error));
 
     let row, table, col = undefined;

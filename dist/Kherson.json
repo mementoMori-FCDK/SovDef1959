@@ -1,0 +1,210 @@
+﻿[
+    {
+        "item": "Топливозаправщики Т3-200 емкостью 8000 литров ",
+        "producer": "Kherson",
+        "unit": "штук",
+        "quantity": "600",
+        "consumer": "Moscow",
+        "type": "maintenance"
+    },
+    {
+        "item": "Эскадренные миноносцы",
+        "producer": "Kherson",
+        "unit": "штук",
+        "quantity": "1",
+        "consumer": "Moscow",
+        "type": "ships/naval forces"
+    },
+    {
+        "item": "Малые охотники за подводными лодками",
+        "producer": "Kherson",
+        "unit": "штук",
+        "quantity": "17",
+        "consumer": "Moscow",
+        "type": "ships/naval forces"
+    },
+    {
+        "item": "Корабли противолодочной обороны малые",
+        "producer": "Kherson",
+        "unit": "штук",
+        "quantity": "2",
+        "consumer": "Moscow",
+        "type": "ships/naval forces"
+    },
+    {
+        "item": "Базовые тральщики",
+        "producer": "Kherson",
+        "unit": "штук",
+        "quantity": "4",
+        "consumer": "Moscow",
+        "type": "ships/naval forces"
+    },
+    {
+        "item": "Торпедные катеры 123к",
+        "producer": "Kherson",
+        "unit": "штук",
+        "quantity": "32",
+        "consumer": "Moscow",
+        "type": "ships/naval forces"
+    },
+    {
+        "item": "Торпедные катеры 125",
+        "producer": "Kherson",
+        "unit": "штук",
+        "quantity": "2",
+        "consumer": "Moscow",
+        "type": "ships/naval forces"
+    },
+    {
+        "item": "Танкодесантные корабли большие",
+        "producer": "Kherson",
+        "unit": "штук",
+        "quantity": "2",
+        "consumer": "Moscow",
+        "type": "ships/naval forces"
+    },
+    {
+        "item": "Плавучие базы подводных лодок",
+        "producer": "Kherson",
+        "unit": "штук",
+        "quantity": "3",
+        "consumer": "Moscow",
+        "type": "ships/naval forces"
+    },
+    {
+        "item": "Плавучие мастерские",
+        "producer": "Kherson",
+        "unit": "штук",
+        "quantity": "2",
+        "consumer": "Moscow",
+        "type": "maintenance"
+    },
+    {
+        "item": "Зарядовые станции",
+        "producer": "Kherson",
+        "unit": "штук",
+        "quantity": "5",
+        "consumer": "Moscow",
+        "type": "maintenance"
+    },
+    {
+        "item": "Спасательные суда",
+        "producer": "Kherson",
+        "unit": "штук",
+        "quantity": "2",
+        "consumer": "Moscow",
+        "type": "ships/naval forces"
+    },
+    {
+        "item": "Сухогрузные суда в десантном исполнении",
+        "producer": "Kherson",
+        "unit": "штук",
+        "quantity": "3",
+        "consumer": "Moscow",
+        "type": "ships/naval forces"
+    },
+    {
+        "item": "Газовые турбинные установки Д-2",
+        "producer": "Kherson",
+        "unit": "агрегат",
+        "quantity": "8",
+        "consumer": "RU",
+        "type": "ships/naval forces"
+    },
+    {
+        "item": "Газовые турбинные установки М-2",
+        "producer": "Kherson",
+        "unit": "агрегат",
+        "quantity": "18",
+        "consumer": "RU",
+        "type": "ships/naval forces"
+    },
+    {
+        "item": "Корпуса мин ИГДМ-500",
+        "producer": "Kherson",
+        "unit": "штук",
+        "quantity": "4800",
+        "consumer": "Dnipro",
+        "type": "ammunition"
+    },
+    {
+        "item": "Понтоны стальные судоподъемные 400-тонные",
+        "producer": "Kherson",
+        "unit": "штук",
+        "quantity": "10",
+        "consumer": "Moscow",
+        "type": "ammunition"
+    },
+    {
+        "item": "Разовые бомбовые кассеты РБК-250 в комплекте с 3АБ-2,5",
+        "producer": "Kherson",
+        "unit": "тыс.шт",
+        "quantity": "5",
+        "consumer": "RU",
+        "type": "ammunition"
+    },
+    {
+        "item": "Корпуса 107мм кумулятивных мин в собранном виде к безоткатным орудиям Б-13",
+        "producer": "Kherson",
+        "unit": "тыс.шт",
+        "quantity": "85",
+        "consumer": "Moscow",
+        "type": "ammunition"
+    },
+    {
+        "item": "Понтоны наплавных железнодорожных мостов типа НЖМ-56",
+        "producer": "Kherson",
+        "unit": "компл.",
+        "quantity": "18",
+        "consumer": "Moscow",
+        "type": "engineering"
+    },
+    {
+        "item": "Эскадренные миноносцы",
+        "producer": "Kherson",
+        "unit": "штук",
+        "quantity": "1",
+        "consumer": "inbound",
+        "type": "ammunition"
+    },
+    {
+        "item": "Корабли противолодочной обороны",
+        "producer": "Kherson",
+        "unit": "штук",
+        "quantity": "19",
+        "consumer": "inbound",
+        "type": "ships/naval forces"
+    },
+    {
+        "item": "Базовые тральщики",
+        "producer": "Kherson",
+        "unit": "штук",
+        "quantity": "4",
+        "consumer": "inbound",
+        "type": "ships/naval forces"
+    },
+    {
+        "item": "Рейдовые тральщики",
+        "producer": "Kherson",
+        "unit": "штук",
+        "quantity": "1",
+        "consumer": "inbound",
+        "type": "ships/naval forces"
+    },
+    {
+        "item": "Торпедные катеры",
+        "producer": "Kherson",
+        "unit": "штук",
+        "quantity": "34",
+        "consumer": "inbound",
+        "type": "ships/naval forces"
+    },
+    {
+        "item": "Большие десантные корабли",
+        "producer": "Kherson",
+        "unit": "штук",
+        "quantity": "2",
+        "consumer": "inbound",
+        "type": "ships/naval forces"
+    }
+]

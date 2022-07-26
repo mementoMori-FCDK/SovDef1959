@@ -1,0 +1,226 @@
+﻿[
+    {
+        "item": "Головные части из делий 8A61 снаряженные",
+        "producer": "Dnipro",
+        "unit": "штук",
+        "quantity": "50",
+        "consumer": "RU",
+        "type": "rockets"
+    },
+    {
+        "item": "КИПС-М на шасси автомобилей ЗИЛ-157 для системы С-75",
+        "producer": "Dnipro",
+        "unit": "комплект",
+        "quantity": "80",
+        "consumer": "Moscow",
+        "type": "rockets"
+    },
+    {
+        "item": "Подвижные радиолокационные станции орудийной наводки СОН-9А",
+        "producer": "Dnipro",
+        "unit": "комплект",
+        "quantity": "750",
+        "consumer": "Moscow",
+        "type": "radars"
+    },
+    {
+        "item": "ТУМ",
+        "producer": "Dnipro",
+        "unit": "штук",
+        "quantity": "500",
+        "consumer": "Moscow",
+        "type": "ammunition"
+    },
+    {
+        "item": "МДТ",
+        "producer": "Dnipro",
+        "unit": "штук",
+        "quantity": "1000",
+        "consumer": "Moscow",
+        "type": "ammunition"
+    },
+    {
+        "item": "ИГДМ",
+        "producer": "Dnipro",
+        "unit": "штук",
+        "quantity": "5800",
+        "consumer": "Moscow",
+        "type": "ammunition"
+    },
+    {
+        "item": "Серпей",
+        "producer": "Dnipro",
+        "unit": "штук",
+        "quantity": "1000",
+        "consumer": "Moscow",
+        "type": "ammunition"
+    },
+    {
+        "item": "ГM",
+        "producer": "Dnipro",
+        "unit": "штук",
+        "quantity": "700",
+        "consumer": "Moscow",
+        "type": "ammunition"
+    },
+    {
+        "item": "КРМ",
+        "producer": "Dnipro",
+        "unit": "штук",
+        "quantity": "500",
+        "consumer": "Moscow",
+        "type": "ammunition"
+    },
+    {
+        "item": "БПС",
+        "producer": "Dnipro",
+        "unit": "штук",
+        "quantity": "3000",
+        "consumer": "Moscow",
+        "type": "ammunition"
+    },
+    {
+        "item": "Б-ЗОМ",
+        "producer": "Dnipro",
+        "unit": "штук",
+        "quantity": "18000",
+        "consumer": "Moscow",
+        "type": "ammunition"
+    },
+    {
+        "item": "Металлические футляры для укупорки 82 мм осколочных мин к безоткатным орудиям Б-11",
+        "producer": "Dnipro",
+        "unit": "штук",
+        "quantity": "250",
+        "consumer": "Moscow",
+        "type": "ammunition"
+    },
+    {
+        "item": "ФАБ-3000 M-54",
+        "producer": "Dnipro",
+        "unit": "штук",
+        "quantity": "2850",
+        "consumer": "Moscow",
+        "type": "air forces"
+    },
+    {
+        "item": "ФАБ-1500 М-54",
+        "producer": "Dnipro",
+        "unit": "штук",
+        "quantity": "4250",
+        "consumer": "Moscow",
+        "type": "air forces"
+    },
+    {
+        "item": "ФАБ-250 М-54 и ФАБ-250ТС A0-50-100M",
+        "producer": "Dnipro",
+        "unit": "штук",
+        "quantity": "150000",
+        "consumer": "Moscow",
+        "type": "air forces"
+    },
+    {
+        "item": "ОФАБ-250-270",
+        "producer": "Dnipro",
+        "unit": "штук",
+        "quantity": "228000",
+        "consumer": "Moscow",
+        "type": "air forces"
+    },
+    {
+        "item": "Снаряжение корпусов 100мм осколочно-фугасных гранат к пушкам образца 1944г.",
+        "producer": "Dnipro",
+        "unit": "штук",
+        "quantity": "750000",
+        "consumer": "Moscow",
+        "type": "ammunition"
+    },
+    {
+        "item": "Снаряжение 82 мм осколочных мин",
+        "producer": "Dnipro",
+        "unit": "штук",
+        "quantity": "1600000",
+        "consumer": "Moscow",
+        "type": "ammunition"
+    },
+    {
+        "item": "ФАБ-9000 M-54",
+        "producer": "Dnipro",
+        "unit": "штук",
+        "quantity": "200",
+        "consumer": "Moscow",
+        "type": "air forces"
+    },
+    {
+        "item": "ФAB-5000 M-54",
+        "producer": "Dnipro",
+        "unit": "штук",
+        "quantity": "500",
+        "consumer": "Moscow",
+        "type": "air forces"
+    },
+    {
+        "item": "Подрывные конденсаторные машинки",
+        "producer": "Dnipro",
+        "unit": "штук",
+        "quantity": "1000",
+        "consumer": "Moscow",
+        "type": "ammunition"
+    },
+    {
+        "item": "Электродвигатели МП-100Б",
+        "producer": "Dnipro",
+        "unit": "штук",
+        "quantity": "2000",
+        "consumer": "Moscow",
+        "type": "air forces"
+    },
+    {
+        "item": "Электродвигатели МГП-180",
+        "producer": "Dnipro",
+        "unit": "штук",
+        "quantity": "3000",
+        "consumer": "Moscow",
+        "type": "air forces"
+    },
+    {
+        "item": "Электродвигатели MB-650A",
+        "producer": "Dnipro",
+        "unit": "штук",
+        "quantity": "250",
+        "consumer": "Moscow",
+        "type": "air forces"
+    },
+    {
+        "item": "Электродвигатели МБП-3",
+        "producer": "Dnipro",
+        "unit": "штук",
+        "quantity": "2000",
+        "consumer": "Moscow",
+        "type": "air forces"
+    },
+    {
+        "item": "Электродвигатели Д-880",
+        "producer": "Dnipro",
+        "unit": "штук",
+        "quantity": "10",
+        "consumer": "Moscow",
+        "type": "air forces"
+    },
+    {
+        "item": "Электродвигатели MB-280K",
+        "producer": "Dnipro",
+        "unit": "штук",
+        "quantity": "50",
+        "consumer": "Moscow",
+        "type": "air forces"
+    },
+    {
+        "item": "Электродвигатели MB-1000 к агрегату ЭЦН-10",
+        "producer": "Dnipro",
+        "unit": "штук",
+        "quantity": "160",
+        "consumer": "Moscow",
+        "type": "air forces"
+    }
+]

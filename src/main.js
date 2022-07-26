@@ -2,6 +2,7 @@ import "./style.css";
 import "./reset.css";
 import "./assets/map.geojson";
 import loaders from "./loaders.js"
+import DrawPieChart from "./pieChart";
 
 //unpack imports
 const {GenerateTable, GenerateInfo, LoadRegions, LoadProduction} = loaders;
@@ -13,6 +14,7 @@ let $table = $('#flex-table');
 let $welcome = $('.welcome');
 let $resList = $('#res-list');
 let $listElement = $('.list-element');
+let $chart = $('.producer-chart');
 
 //array to filter the highlighted regions
 const producers = ["Kyiv", "Odesa", "Lviv", "Dnipro", "Zaporizhia", "Kherson", "Vinnytsia", "Donets'k", "Luhans'k", "Kharkiv"];
@@ -115,11 +117,13 @@ const setDropdown = (feature, base) => {
 
 async function BaseLayerClickHandler(regionName) {
   if(producers.includes(regionName)) {
-    $table.show();
+    //$table.show();
     $welcome.hide();
+    $chart.show();
     currentLayer = await highlightConsumers(regionName);
-    GenerateInfo(regionName);
-    // GenerateTable(regionName);
+    DrawPieChart(regionName);
+    //GenerateInfo(regionName);
+    //GenerateTable(regionName);
   }
 };
 
@@ -206,7 +210,7 @@ const resetView = () => {
   let $header = $('.header');
   if($header !== undefined)
     $header.siblings().remove();
-  //replace with the base layer
+  //replace the map with the base layer
   regionsLayer.addTo(map);
   regionsLayer.eachLayer(function(layer) {
     setDropdown(layer.feature, true);
