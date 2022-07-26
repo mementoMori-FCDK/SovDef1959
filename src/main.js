@@ -1,11 +1,10 @@
 import "./style.css";
 import "./reset.css";
 import "./assets/map.geojson";
-// import "./assets/Kyiv.json";
 import loaders from "./loaders.js"
 
 //unpack imports
-const {GenerateInfo, loadRegions, loadProduction} = loaders;
+const {GenerateTable, GenerateInfo, LoadRegions, LoadProduction} = loaders;
 
 /**
  * jquery selectors
@@ -33,7 +32,7 @@ const cache = {};
 
 function importAll(r) {
   r.keys().forEach((key) => (cache[key] = r(key)));
-}
+};
 
 importAll(require.context('./assets/', true, /\.json$/));
 
@@ -120,10 +119,11 @@ async function BaseLayerClickHandler(regionName) {
     $welcome.hide();
     currentLayer = await highlightConsumers(regionName);
     GenerateInfo(regionName);
+    // GenerateTable(regionName);
   }
 };
 
-let regionsJSON = await loadRegions().then(data => regionsJSON = data);
+let regionsJSON = await LoadRegions().then(data => regionsJSON = data);
 export let regionsLayer = L.geoJSON(regionsJSON, {
   style: defaultStyle,
   onEachFeature: function(feature, layer) {
@@ -146,7 +146,7 @@ export let regionsLayer = L.geoJSON(regionsJSON, {
 const highlightConsumers = async (region) => {
   $resList.empty();
   let consumers = new Set();
-  let data = await loadProduction(region);
+  let data = await LoadProduction(region);
   try{
     data.forEach(entry => {
       if(entry.consumer === 'inbound') {

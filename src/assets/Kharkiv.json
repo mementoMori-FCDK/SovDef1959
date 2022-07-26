@@ -309,7 +309,7 @@
         "unit": "штук",
         "quantity": "150",
         "consumer": "Moscow",
-        "type": "air force"
+        "type": "air forces"
     },
     {
         "item": "Топливоцистерны механизированные АЦМ-4-150 емкостью 4000 литров",
@@ -613,7 +613,7 @@
         "unit": "тыс.шт",
         "quantity": "16",
         "consumer": "Dnipro",
-        "type": "air force"
+        "type": "air forces"
     },
     {
         "item": "БРАБ-500",
@@ -621,7 +621,7 @@
         "unit": "тыс.шт",
         "quantity": "0.6",
         "consumer": "Donets'k",
-        "type": "air force"
+        "type": "air forces"
     },
     {
         "item": "ЗАБ-250-200",
@@ -629,7 +629,7 @@
         "unit": "тыс.шт",
         "quantity": "10",
         "consumer": "RU",
-        "type": "air force"
+        "type": "air forces"
     },
     {
         "item": "ФОТАБ-250-215 (комплектно с патронами)",
@@ -637,7 +637,7 @@
         "unit": "тыс.шт",
         "quantity": "3",
         "consumer": "RU",
-        "type": "air force"
+        "type": "air forces"
     },
     {
         "item": "Корпуса 82 мм осколочных мин",

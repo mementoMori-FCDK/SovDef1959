@@ -24,7 +24,20 @@ const loadRegions = async () => {
     }
   };
 
-  async function GenerateInfo(ProdRegion){
+  async function GenerateInfo(ProdRegion) {
+    let arr = await loadProduction(ProdRegion)
+    .then(data => arr = data).catch(error => console.log(error));
+
+    let tabs = new Set();
+
+    arr.forEach(element => {
+      if(!tabs.has(element.type)) tabs.add(element.type);
+    });
+
+    console.log(tabs);
+  };
+
+  async function GenerateTable(ProdRegion){
     let arr = await loadProduction(ProdRegion)
     .then(data => arr = data).catch(error => console.log(error));
 
@@ -62,5 +75,11 @@ const loadRegions = async () => {
     }
   };
 
-const resources = {GenerateInfo, loadRegions, loadProduction};
+const resources = {
+  GenerateTable: GenerateTable,
+  GenerateInfo: GenerateInfo,
+  LoadRegions: loadRegions,
+  LoadProduction: loadProduction
+};
+
 export default resources;

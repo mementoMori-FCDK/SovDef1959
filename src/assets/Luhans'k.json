@@ -21,7 +21,7 @@
         "unit": "тыс.шт",
         "quantity": "20",
         "consumer": "Moscow",
-        "type": "air force"
+        "type": "air forces"
     },
     {
         "item": "Заряды для реактивных снарядов М-140Ф",
@@ -29,7 +29,7 @@
         "unit": "тыс.шт",
         "quantity": "60",
         "consumer": "Moscow",
-        "type": "air force"
+        "type": "air forces"
     },
     {
         "item": "Заряды реактивных снарядов М-24 ФУД",
@@ -37,7 +37,7 @@
         "unit": "тыс.шт",
         "quantity": "25",
         "consumer": "Moscow",
-        "type": "air force"
+        "type": "air forces"
     },
     {
         "item": "Заряды для реактивных снарядов М-24Ф",
@@ -45,6 +45,6 @@
         "unit": "тыс. шт",
         "quantity": "50",
         "consumer": "Moscow",
-        "type": "air force"
+        "type": "air forces"
     }
 ]

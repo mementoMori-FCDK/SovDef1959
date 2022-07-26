@@ -85,7 +85,7 @@
         "unit": "тыс.шт",
         "quantity": "5",
         "consumer": "RU",
-        "type": "air force"
+        "type": "air forces"
     },
     {
         "item": "ДАБ-100-90",
@@ -93,7 +93,7 @@
         "unit": "тыс.шт",
         "quantity": "8",
         "consumer": "RU",
-        "type": "air force"
+        "type": "air forces"
     },
     {
         "item": "Универсальные резонансные волномеры УBP-1",
@@ -112,10 +112,7 @@
         "type": "radio/radars"
     },
     {
-        "item": "Гетеродинные волномеры"
-    },
-    {
-        "item": "ВГ-526 и BГ-528",
+        "item": "Гетеродинные волномеры ВГ-526 и BГ-528",
         "producer": "Lviv",
         "unit": "штук",
         "quantity": "4000",
