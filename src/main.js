@@ -30,12 +30,13 @@ let hoverStyle = {
   fillOpacity: 0.5
 };
 
+//for accets import
 const cache = {};
 
+//dynamic import
 function importAll(r) {
   r.keys().forEach((key) => (cache[key] = r(key)));
 };
-
 importAll(require.context('./assets/', true, /\.json$/));
 
 var map = L.map('map', {
