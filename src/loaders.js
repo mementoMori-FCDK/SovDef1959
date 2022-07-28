@@ -24,6 +24,14 @@ const loadRegions = async () => {
     }
   };
 
+  function CalculateTotalByType(array, type) {
+    let result  = 0;
+    array.forEach(element => {
+       if(element.type === type) result ++;
+    });
+    return result;
+  };
+
   async function GenerateInfo(prodRegion) {
     let arr = await loadProduction(prodRegion)
     .then(data => arr = data).catch(error => console.log(error));
@@ -40,46 +48,39 @@ const loadRegions = async () => {
     return dict;
   };
 
-  function CalculateTotalByType(array, type) {
-    let result  = 0;
-    array.forEach(element => {
-       if(element.type === type) result ++;
-    });
-    return result;
-  };
-
-  async function GenerateTable(prodRegion){
+  async function GenerateTable(prodRegion, type){
     let arr = await loadProduction(prodRegion)
     .then(data => arr = data).catch(error => console.log(error));
-
     let row, table, col = undefined;
     table = document.getElementById('flex-table');
     try{
       arr.forEach(element => {
-        row = document.createElement('div');
-        row.className = 'row';
-    
-        col = document.createElement('div');
-        col.className = 'col item';
-        col.innerHTML = element.item;
-        row.appendChild(col);
-    
-        col = document.createElement('div');
-        col.className = 'col';
-        col.innerHTML = element.unit;
-        row.appendChild(col);
-    
-        col = document.createElement('div');
-        col.className = 'col';
-        col.innerHTML = element.quantity;
-        row.appendChild(col);
-    
-        col = document.createElement('div');
-        col.className = 'col';
-        col.innerHTML = element.consumer;
-        row.appendChild(col);
-    
-        table.appendChild(row);
+        if (element.type === type) {
+          row = document.createElement('div');
+          row.className = 'row';
+      
+          col = document.createElement('div');
+          col.className = 'col item';
+          col.innerHTML = element.item;
+          row.appendChild(col);
+      
+          col = document.createElement('div');
+          col.className = 'col';
+          col.innerHTML = element.unit;
+          row.appendChild(col);
+      
+          col = document.createElement('div');
+          col.className = 'col';
+          col.innerHTML = element.quantity;
+          row.appendChild(col);
+      
+          col = document.createElement('div');
+          col.className = 'col';
+          col.innerHTML = element.consumer;
+          row.appendChild(col);
+      
+          table.appendChild(row);
+        }
       });
     } catch(error){
       console.log(error);

@@ -2,10 +2,11 @@ import "./style.css";
 import "./reset.css";
 import "./assets/map.geojson";
 import loaders from "./loaders.js"
-import DrawPieChart from "./pieChart";
+import chartResources from "./pieChart";
 
 //unpack imports
-const {GenerateTable, GenerateInfo, LoadRegions, LoadProduction} = loaders;
+const {LoadRegions, LoadProduction} = loaders;
+const {DrawPieChart, DestroyChart} = chartResources;
 
 /**
  * jquery selectors
@@ -197,16 +198,19 @@ const highlightConsumers = async (region) => {
  */
 const resetView = () => {
   //remove currentLayer from the map
-  if(currentLayer !== undefined){
+  if(currentLayer !== undefined) {
     currentLayer.remove();
     currentLayer = undefined;
   }
   // reset dropdown
   $resList.empty();
-  //toggle welcome div
+  //show welcome div
   $welcome.show();
-  //toggle info table
-  $table.hide();
+  //hide info table if visible
+  if($table.is(":visible")) $table.hide();
+  //hide pie chart if visible
+  if($chart.is(":visible")) $chart.hide();
+  DestroyChart();
   //delete generated rows
   let $header = $('.header');
   if($header !== undefined)

@@ -2,7 +2,8 @@ import Chart from 'chart.js/auto';
 import loaders from "./loaders.js"
 import * as d3 from "d3";
 
-const {GenerateInfo, LoadProduction} = loaders;
+const {GenerateInfo, GenerateTable} = loaders;
+let pieChart = undefined;
 
 function calculatePoint(i, intervalSize, colorRangeInfo) {
   var { colorStart, colorEnd, useEndAsStart } = colorRangeInfo;
@@ -27,6 +28,7 @@ function interpolateColors(dataLength, colorScale, colorRangeInfo) {
 }
 
 async function DrawPieChart(prodRegion) {
+  $('#chart-label').text(`${prodRegion} Regional Economic Soviet`);
   let prodDict = await GenerateInfo(prodRegion)
   .then(data => prodDict = data).catch(error => console.log(error));
   
@@ -38,8 +40,7 @@ async function DrawPieChart(prodRegion) {
     useEndAsStart: false,
   };
 
-  let colors = interpolateColors(dataLength, d3.interpolateInferno, colorRangeInfo);
-  console.log(colors);
+  let colors = interpolateColors(dataLength, d3.interpolateRainbow, colorRangeInfo);
 
   const data = {
     labels: Object.keys(prodDict),
@@ -52,7 +53,20 @@ async function DrawPieChart(prodRegion) {
   };
 
   const options = {
-    responsive: true
+    onClick: (e) => onClickHandler(e, prodRegion),
+    plugins: {
+      legend: {
+        onClick: (e) => {},
+        dispaly: true,
+        position: 'bottom',
+        labels: {
+          color: 'white',
+          font: {
+            size: 14
+          }
+        }
+      }
+    }
   };
 
   const config = {
@@ -61,7 +75,28 @@ async function DrawPieChart(prodRegion) {
     options: options,
   };
 
-  const pieChart = new Chart($('#production-pie'), config);
+  pieChart = new Chart($('#production-pie'), config);
 }
 
-export default DrawPieChart;
+function onClickHandler(e, prodRegion) {
+  const points = pieChart.getElementsAtEventForMode(e, 'nearest', {
+    intersect: true
+  }, true);
+  if (points.length) {
+    const firstPoint = points[0];
+    const label = pieChart.data.labels[firstPoint.index];
+    // pieChart.destroy();
+    // GenerateTable(prodRegion, label);
+  }
+}
+
+function DestroyChart() {
+  pieChart.destroy();
+}
+
+const resourses = {
+  DrawPieChart,
+  DestroyChart
+};
+
+export default resourses;
