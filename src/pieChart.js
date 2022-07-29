@@ -48,12 +48,16 @@ async function DrawPieChart(prodRegion) {
       label: `${prodRegion} Production Pie Chart`,
       data: Object.values(prodDict),
       backgroundColor: colors,
-      hoverOffset: 4
+      hoverOffset: 15
     }]
   };
 
   const options = {
     onClick: (e) => onClickHandler(e, prodRegion),
+    cutout: '30%',
+    layout: {
+      padding: 10
+    },
     plugins: {
       legend: {
         onClick: (e) => {},
@@ -63,7 +67,8 @@ async function DrawPieChart(prodRegion) {
           color: 'white',
           font: {
             size: 14
-          }
+          },
+          padding: 15
         }
       }
     }
@@ -85,8 +90,10 @@ function onClickHandler(e, prodRegion) {
   if (points.length) {
     const firstPoint = points[0];
     const label = pieChart.data.labels[firstPoint.index];
-    // pieChart.destroy();
-    // GenerateTable(prodRegion, label);
+    pieChart.destroy();
+    $('.producer-chart').hide();
+    $('.table').show();
+    GenerateTable(prodRegion, label);
   }
 }
 
