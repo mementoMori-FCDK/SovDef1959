@@ -60,7 +60,7 @@ async function DrawPieChart(prodRegion) {
     },
     plugins: {
       legend: {
-        onClick: (e) => {},
+        onClick: (e) => EmptyLegendHandler(e),    //ok...
         dispaly: true,
         position: 'bottom',
         labels: {
@@ -83,6 +83,10 @@ async function DrawPieChart(prodRegion) {
   pieChart = new Chart($('#production-pie'), config);
 }
 
+function EmptyLegendHandler(e) {
+  return e;
+}
+
 function onClickHandler(e, prodRegion) {
   const points = pieChart.getElementsAtEventForMode(e, 'nearest', {
     intersect: true
@@ -90,9 +94,11 @@ function onClickHandler(e, prodRegion) {
   if (points.length) {
     const firstPoint = points[0];
     const label = pieChart.data.labels[firstPoint.index];
-    pieChart.destroy();
+    setTimeout(() => {
+      pieChart.destroy();
+    }, 100);
     $('.producer-chart').hide();
-    $('.table').show();
+    $('.tableWrapper').show();
     GenerateTable(prodRegion, label);
   }
 }

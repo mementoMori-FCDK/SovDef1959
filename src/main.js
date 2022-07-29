@@ -11,7 +11,7 @@ const {DrawPieChart, DestroyChart} = chartResources;
 /**
  * jquery selectors
  */
-let $table = $('#flex-table');
+let $table = $('.tableWrapper');
 let $welcome = $('.welcome');
 let $resList = $('#res-list');
 let $listElement = $('.list-element');
@@ -119,13 +119,10 @@ const setDropdown = (feature, base) => {
 
 async function BaseLayerClickHandler(regionName) {
   if(producers.includes(regionName)) {
-    //$table.show();
     $welcome.hide();
     $chart.show();
     currentLayer = await highlightConsumers(regionName);
     DrawPieChart(regionName);
-    //GenerateInfo(regionName);
-    //GenerateTable(regionName);
   }
 };
 
@@ -136,6 +133,7 @@ export let regionsLayer = L.geoJSON(regionsJSON, {
     setDropdown(feature, true);
     layer.on('click', async function(){
       BaseLayerClickHandler(feature.properties.name);
+      layer.fire('mouseout');
     });
     layer.on('mouseover', () => {
       $('#current-region').val(setRegionInfo(feature));
