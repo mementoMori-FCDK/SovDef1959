@@ -209,16 +209,12 @@ const resetView = () => {
   //hide pie chart if visible
   if($chart.is(":visible")) $chart.hide();
   DestroyChart();
-  //delete generated rows
-  let $header = $('.header');
-  if($header !== undefined)
-    $header.siblings().remove();
   //replace the map with the base layer
   regionsLayer.addTo(map);
   regionsLayer.eachLayer(function(layer) {
     setDropdown(layer.feature, true);
   });
-
+  TableClearContent();
   $('.list-element').on('click', (e) => {
     BaseLayerClickHandler(e.target.innerText);
   });
@@ -229,7 +225,21 @@ const resetView = () => {
   });
 };
 
+function TableClearContent() {
+  //delete generated rows
+  let $header = $('.header');
+  if($header !== undefined)
+    $header.siblings().remove();
+};
+
 $('#map-reset').on('click', resetView);
+$('#table-map-reset').on('click', resetView);
+
+$('#table-back-to-pie').on('click', () => {
+  if($table.is(":visible")) $table.hide();
+  TableClearContent();
+  $('.producer-chart').show();
+})
 
 $('.list-element').on('click', (e) => {
   BaseLayerClickHandler(e.target.innerText);

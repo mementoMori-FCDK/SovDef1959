@@ -194,10 +194,12 @@ html, body {
     color: rgb(255, 255, 255);
     background: transparent;
   }
+
   #map-reset:hover:after, #dropdown-button:hover:after {
     top: 0;
     left: 0;
   }
+
   #map-reset:after, #dropdown-button:after {
     content: "";
     width: 100%;

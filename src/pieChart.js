@@ -94,9 +94,6 @@ function onClickHandler(e, prodRegion) {
   if (points.length) {
     const firstPoint = points[0];
     const label = pieChart.data.labels[firstPoint.index];
-    setTimeout(() => {
-      pieChart.destroy();
-    }, 100);
     $('.producer-chart').hide();
     $('.tableWrapper').show();
     GenerateTable(prodRegion, label);
