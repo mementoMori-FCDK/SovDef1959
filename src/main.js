@@ -3,6 +3,7 @@ import "./reset.css";
 import "./assets/map.geojson";
 import loaders from "./loaders.js"
 import chartResources from "./pieChart";
+import * as d3 from "d3";
 
 //unpack imports
 const {LoadRegions, LoadProduction} = loaders;
@@ -23,11 +24,13 @@ const producers = ["Kyiv", "Odesa", "Lviv", "Dnipro", "Zaporizhia", "Kherson", "
 const center = [49.98964246591577, 36.23222351074219];
 let currentLayer = undefined;
 let defaultStyle = {
-  color: '#87ceeb',
+  fillColor: '#87ceeb',
+  color: 'skyblue',
   fillOpacity: 0.1
 };
 let hoverStyle = {
-  color: '#ff7d00',
+  fillColor: '#ff7d00',
+  color: 'orange',
   fillOpacity: 0.5
 };
 
@@ -121,8 +124,8 @@ async function BaseLayerClickHandler(regionName) {
   if(producers.includes(regionName)) {
     $welcome.hide();
     $chart.show();
-    currentLayer = await highlightConsumers(regionName);
     DrawPieChart(regionName);
+    currentLayer = await highlightConsumers(regionName);
   }
 };
 
@@ -133,7 +136,6 @@ export let regionsLayer = L.geoJSON(regionsJSON, {
     setDropdown(feature, true);
     layer.on('click', async function(){
       BaseLayerClickHandler(feature.properties.name);
-      layer.fire('mouseout');
     });
     layer.on('mouseover', () => {
       $('#current-region').val(setRegionInfo(feature));
@@ -147,6 +149,54 @@ export let regionsLayer = L.geoJSON(regionsJSON, {
   
 }).addTo(map);
 
+function CalculateConsumerWeight(prodArray, region) {
+  let dict = {};
+  //calculate the number of entries
+  prodArray.forEach((item) => {
+    if(dict[item.consumer]) {
+      dict[item.consumer] += 1;
+    } else dict[item.consumer] = 1;
+  });
+  //replace 'inbound' key with feature name for map coloring
+  for(let [key, value] of Object.entries(dict)) {
+    if (key === 'inbound') {
+      let tmp = dict[key];
+      dict[region] = tmp;
+      delete dict[key];
+    }
+  }
+  //look for the max consumer
+  let max = 0;
+  for(const [key, value] of Object.entries(dict)) {
+    if (value > max) max = value;
+  }
+  //interpolate consumers
+  for(const [key, value] of Object.entries(dict)) {
+    value =  value/max;
+    dict[key] = value;
+  }
+  return dict;
+};
+
+/**
+ * form a style object for a respective consumer region
+ * @param {String} consumerName - the name of the consumer region
+ * @param {Object} dict         - the dictionary with consumerName/coloring value pairs
+ * @returns style object
+ */
+function ConsumerStyle (consumerName, dict) {
+  return {
+    fillColor: d3.interpolateTurbo(dict[consumerName]),
+    fillOpacity: 0.6,
+    color: d3.interpolateTurbo(dict[consumerName])
+  }
+};
+
+/**
+ * 
+ * @param {String} region 
+ * @returns a promise
+ */
 const highlightConsumers = async (region) => {
   $resList.empty();
   let consumers = new Set();
@@ -157,21 +207,29 @@ const highlightConsumers = async (region) => {
         consumers.add(region);
       } else consumers.add(entry.consumer);
     });
+    let consumerColors = CalculateConsumerWeight(data, region);
+
     //create new layer
     currentLayer = L.geoJSON(regionsJSON, {
-      style: defaultStyle,
+      style: function(feature) {
+        return ConsumerStyle(feature.properties.name, consumerColors)
+      },
       filter: function(geoJsonFeature){
         if(consumers.has(geoJsonFeature.properties.name)) return true;
       },
       onEachFeature: function(feature, layer){
+        let name = feature.properties.name;
         setDropdown(feature, false);
         layer.on('mouseover', () => {
           $('#current-region').val(setRegionInfo(feature));
-          layer.setStyle(hoverStyle);
+          layer.setStyle({
+            color: 'black',
+            fillOpacity: 1
+          })
         });
         layer.on('mouseout', () => {
           $('#current-region').val('');
-          layer.setStyle(defaultStyle);
+          layer.setStyle(ConsumerStyle(name, consumerColors));
         });
       }
     });

@@ -2,8 +2,6 @@
 <html lang="en">
 <head>
   <title>SovDef1959</title>
-  <!-- <link rel="stylesheet" href="style.css"> -->
-  <!-- <link rel="reset css" href="reset.css"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
@@ -33,6 +31,9 @@
           </div>
         </div>
       </div>
+      <div class="colorScheme">
+        <img src="assets/scheme.png" alt="placeholder" width="500" height="600"/>
+      </div>
       <div id="map"></div>
     </div>
     <div id="info">
@@ -44,16 +45,23 @@
         </div>
       </div>
       <div class="producer-chart" style="display: none">
+        <h1 id="chart-label"></h1>
         <div class="pieWrap">
           <canvas id="production-pie"></canvas>
         </div>
       </div>
-      <div class="table" id="flex-table" style="display: none">
-        <div class="header">
-          <div class="col item">Item</div>
-          <div class="col">Unit</div>
-          <div class="col">Quantity</div>
-          <div class="col">Consumer</div>
+      <div class="tableWrapper" style="display: none">
+        <div class="buttonsRow">
+          <button type="button" id="table-back-to-pie">&#8592</button>
+          <button type="button" id="table-map-reset">Reset Map</button>
+        </div>
+        <div class="table" id="flex-table">
+          <div class="header">
+            <div class="col item">Item</div>
+            <div class="col">Unit</div>
+            <div class="col">Quantity</div>
+            <div class="col">Consumer</div>
+          </div>
         </div>
       </div>
     </div>

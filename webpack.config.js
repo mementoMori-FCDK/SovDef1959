@@ -2,7 +2,6 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
-
 module.exports = {
     mode: 'development',
     entry: path.resolve(__dirname, 'src/main.js'),
@@ -26,7 +25,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'SovDef1959 projecto',
+            title: 'SovDef1959 project',
             filename: 'index.html',
             template: 'src/template.html'
         }),
@@ -51,12 +50,16 @@ module.exports = {
                 type: 'asset/resource'
             },
             {
+                test: /\.png$/i,
+                type: 'asset/resource'
+            },
+            {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        presets: ['@babel/preset-env', ['@babel/preset-react',{"runtime": "automatic"}]]
+                        presets: ['@babel/preset-env', ['@babel/preset-react', {"runtime": "automatic"}]]
                     }
                 }
             }
