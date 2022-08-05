@@ -131,6 +131,7 @@ async function BaseLayerClickHandler(regionName) {
     $chart.show();
     DrawPieChart(regionName);
     currentLayer = await highlightConsumers(regionName);
+    if($colorScheme.is(":hidden")) $colorScheme.show();
   }
 };
 
@@ -271,12 +272,16 @@ const resetView = () => {
   if($table.is(":visible")) $table.hide();
   //hide pie chart if visible
   if($chart.is(":visible")) $chart.hide();
+  //hide color scheme
+  if($colorScheme.is(":visible")) $colorScheme.hide();
+  //remove current chart
   DestroyChart();
   //replace the map with the base layer
   regionsLayer.addTo(map);
   regionsLayer.eachLayer(function(layer) {
     setDropdown(layer.feature, true);
   });
+  //reset the info table
   TableClearContent();
   $('.list-element').on('click', (e) => {
     BaseLayerClickHandler(e.target.innerText);
