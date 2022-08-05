@@ -54,6 +54,10 @@ module.exports = {
                 type: 'asset/resource'
             },
             {
+                test: /\.svg$/i,
+                type: 'asset/resource'
+            },
+            {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: {

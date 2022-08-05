@@ -32,7 +32,15 @@
         </div>
       </div>
       <div class="colorScheme">
-        <img src=<%=require('./assets/scheme.png')%> alt="placeholder" width="500" height="300"/>
+        <div id="graphics">
+          <div class="rotateLeft">&#x21b2</div>
+          <img class="schemeImg" />
+          <div class="rotateRight">&#x21b3</div>
+        </div>
+        <div class='schemeInfo'>
+          <h6 id="min">Min</h6>
+          <h6 id="max">Max</h6>
+        </div>
       </div>
       <div id="map"></div>
     </div>

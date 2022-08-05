@@ -4,6 +4,7 @@ import "./assets/map.geojson";
 import loaders from "./loaders.js"
 import chartResources from "./pieChart";
 import * as d3 from "d3";
+import img from "./assets/scheme.png";
 
 //unpack imports
 const {LoadRegions, LoadProduction} = loaders;
@@ -17,6 +18,10 @@ let $welcome = $('.welcome');
 let $resList = $('#res-list');
 let $listElement = $('.list-element');
 let $chart = $('.producer-chart');
+let $colorScheme = $('.colorScheme');
+//setup scheme image source
+let $schemeImg = $('.schemeImg');
+$schemeImg.attr('src', img);
 
 //array to filter the highlighted regions
 const producers = ["Kyiv", "Odesa", "Lviv", "Dnipro", "Zaporizhia", "Kherson", "Vinnytsia", "Donets'k", "Luhans'k", "Kharkiv"];
@@ -297,7 +302,7 @@ $('#table-back-to-pie').on('click', () => {
   if($table.is(":visible")) $table.hide();
   TableClearContent();
   $('.producer-chart').show();
-})
+});
 
 $('.list-element').on('click', (e) => {
   BaseLayerClickHandler(e.target.innerText);
