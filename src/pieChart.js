@@ -54,6 +54,9 @@ async function DrawPieChart(prodRegion) {
 
   const options = {
     onClick: (e) => onClickHandler(e, prodRegion),
+    onHover: (evt, activeEls) => {
+      activeEls.length > 0 ? evt.chart.canvas.style.cursor = 'pointer' : evt.chart.canvas.style.cursor = 'default';
+    },
     cutout: '30%',
     layout: {
       padding: 10

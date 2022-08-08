@@ -42,11 +42,12 @@ let hoverStyle = {
 //for accets import
 const cache = {};
 
-//dynamic import
+//dynamic import 
 function importAll(r) {
   r.keys().forEach((key) => (cache[key] = r(key)));
 };
 importAll(require.context('./assets/', true, /\.json$/));
+importAll(require.context('./assets/', true, /\.svg$/));
 
 var map = L.map('map', {
   zoomControl: false
@@ -56,6 +57,20 @@ var tiles = L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{
   maxZoom: 19,
   attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
 }).addTo(map);
+
+var icon = L.divIcon({
+  html: `<div style='display: flex'>
+          <img src='transport.svg' width='30px' height='30px'/>
+          <img src='transport.svg' width='30px' height='30px'/>
+          <img src='weapons.svg' width='30px' height='30px'/>
+        </div>`,
+  iconSize: [100, 30],
+  iconAnchor: [50,30],
+  popupAnchor: [-3, -76],
+});
+
+var marker = L.marker([50.44351305245805,30.51967620849609], {icon: icon})
+.addTo(map);
 
 /**
  * returns region info string
