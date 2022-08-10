@@ -13,7 +13,7 @@
         "unit": "машин",
         "quantity": "298",
         "consumer": "Moscow",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Корпуса авиабомб АО-1",

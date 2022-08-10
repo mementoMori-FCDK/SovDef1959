@@ -501,7 +501,7 @@
         "unit": "компл.",
         "quantity": "200",
         "consumer": "UZB",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Самолетные маркерные радиоприемники МРП-56",
@@ -509,7 +509,7 @@
         "unit": "компл.",
         "quantity": "300",
         "consumer": "GE",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Самолетные маркерные радиоприемники МРП-56",
@@ -517,7 +517,7 @@
         "unit": "компл.",
         "quantity": "7900",
         "consumer": "RU",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Самолетные маркерные радиоприемники МРП-56",
@@ -525,7 +525,7 @@
         "unit": "компл.",
         "quantity": "800",
         "consumer": "Kyiv",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Самолетные маркерные радиоприемники МРП-56",
@@ -533,7 +533,7 @@
         "unit": "компл.",
         "quantity": "200",
         "consumer": "inbound",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Самолетные курсовые радиоприемники КРПФ",
@@ -541,7 +541,7 @@
         "unit": "компл.",
         "quantity": "800",
         "consumer": "Moscow",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Самолетные курсовые радиоприемники КРПФ",
@@ -549,7 +549,7 @@
         "unit": "компл.",
         "quantity": "200",
         "consumer": "UZB",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Самолетные курсовые радиоприемники КРПФ",
@@ -557,7 +557,7 @@
         "unit": "компл.",
         "quantity": "1300",
         "consumer": "RU",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Самолетные глиссадные радиоприемники ГРП-2",
@@ -565,7 +565,7 @@
         "unit": "компл.",
         "quantity": "950",
         "consumer": "Moscow",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Самолетные глиссадные радиоприемники ГРП-2",
@@ -573,7 +573,7 @@
         "unit": "компл.",
         "quantity": "200",
         "consumer": "UZB",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Самолетные глиссадные радиоприемники ГРП-2",
@@ -581,7 +581,7 @@
         "unit": "компл.",
         "quantity": "1200",
         "consumer": "RU",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Панорамные приемослежечные радиостанции Р-317 (Лента)",
@@ -589,7 +589,7 @@
         "unit": "компл.",
         "quantity": "100",
         "consumer": "Moscow",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Подвижные узлы слухового перехвата Р-322Б (Сирень)",
@@ -597,7 +597,7 @@
         "unit": "компл.",
         "quantity": "20",
         "consumer": "RU",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Радиопеленгаторы PПH-50",
@@ -605,7 +605,7 @@
         "unit": "компл.",
         "quantity": "200",
         "consumer": "RU",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "ФАБ-250 М-54",
@@ -1173,7 +1173,7 @@
         "unit": "тонн",
         "quantity": "150",
         "consumer": "Moscow",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Трубки ТВ-85, TB-100",
@@ -1181,7 +1181,7 @@
         "unit": "штук",
         "quantity": "300",
         "consumer": "Moscow",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Трубки ТВ-200",
@@ -1189,7 +1189,7 @@
         "unit": "штук",
         "quantity": "400",
         "consumer": "Moscow",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Узлы, агрегаты и детали танка Т-54",

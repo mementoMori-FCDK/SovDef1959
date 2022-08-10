@@ -31,7 +31,6 @@ async function DrawPieChart(prodRegion) {
   $('#chart-label').text(`${prodRegion} Regional Economic Soviet`);
   let prodDict = await GenerateInfo(prodRegion)
   .then(data => prodDict = data).catch(error => console.log(error));
-  
   const dataLength = Object.keys(prodDict).length;
 
   const colorRangeInfo = {

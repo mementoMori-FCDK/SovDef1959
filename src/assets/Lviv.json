@@ -21,7 +21,7 @@
         "unit": "компл.",
         "quantity": "274",
         "consumer": "RU",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Радиостанции СРКС-0,08 и ПАРКС-0,08",
@@ -29,7 +29,7 @@
         "unit": "компл.",
         "quantity": "6",
         "consumer": "Kherson",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Телеграфные аппараты Т-100 (Бодо)",
@@ -37,7 +37,7 @@
         "unit": "компл.",
         "quantity": "300",
         "consumer": "Moscow",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Телеграфные аппараты Т-100 (Бодо)",
@@ -45,7 +45,7 @@
         "unit": "компл.",
         "quantity": "200",
         "consumer": "Odesa",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Фототелеграфные аппараты П-106 ('Орел', 'Экран' и 'Аппатит')",
@@ -53,7 +53,7 @@
         "unit": "компл.",
         "quantity": "5",
         "consumer": "RU",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Фототелеграфные аппараты П-106 ('Орел', 'Экран' и 'Аппатит')",
@@ -61,7 +61,7 @@
         "unit": "компл.",
         "quantity": "295",
         "consumer": "Moscow",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Фототелеграфные аппараты П-106 ('Орел', 'Экран' и 'Аппатит')",
@@ -69,7 +69,7 @@
         "unit": "компл.",
         "quantity": "5",
         "consumer": "Kherson",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Аппаратура тонального телеграфирования П-314 ('Цепь')",
@@ -77,7 +77,7 @@
         "unit": "компл.",
         "quantity": "200",
         "consumer": "Moscow",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "САБ-100-90",
@@ -101,7 +101,7 @@
         "unit": "штук",
         "quantity": "200",
         "consumer": "Moscow",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Резонансные волномеры РВД",
@@ -109,7 +109,7 @@
         "unit": "штук",
         "quantity": "100",
         "consumer": "Moscow",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Гетеродинные волномеры ВГ-526 и BГ-528",
@@ -117,7 +117,7 @@
         "unit": "штук",
         "quantity": "4000",
         "consumer": "Moscow",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Кварцевые калибраторы KК-4, KK-6",
@@ -125,6 +125,6 @@
         "unit": "штук",
         "quantity": "3250",
         "consumer": "Moscow",
-        "type": "radio/radars"
+        "type": "radio&radars"
     }
 ]

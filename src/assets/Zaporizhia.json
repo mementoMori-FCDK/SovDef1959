@@ -173,7 +173,7 @@
         "unit": "компл.",
         "quantity": "830",
         "consumer": "Kharkiv",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Общевойсковне радиостанции Р-104 (РДС) автомобильные и стационарные",
@@ -181,7 +181,7 @@
         "unit": "компл.",
         "quantity": "1170",
         "consumer": "Moscow",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Корабельные радиостанции Р-609 ('Кипарис' и 'Акация')",
@@ -189,7 +189,7 @@
         "unit": "компл.",
         "quantity": "3278",
         "consumer": "RU",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Корабельные радиостанции Р-609 ('Кипарис' и 'Акация')",
@@ -197,7 +197,7 @@
         "unit": "компл.",
         "quantity": "1",
         "consumer": "EE",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Корабельные радиостанции Р-609 ('Кипарис' и 'Акация')",
@@ -205,7 +205,7 @@
         "unit": "компл.",
         "quantity": "150",
         "consumer": "Kherson",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Корабельные радиостанции Р-609 ('Кипарис' и 'Акация')",
@@ -213,7 +213,7 @@
         "unit": "компл.",
         "quantity": "16",
         "consumer": "Kyiv",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Радиостанции аэродромные",
@@ -221,7 +221,7 @@
         "unit": "компл.",
         "quantity": "924",
         "consumer": "RU",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Радиостанции аэродромные",
@@ -229,7 +229,7 @@
         "unit": "компл.",
         "quantity": "6",
         "consumer": "Kherson",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Засекречивающая аппаратура Р-754 ('Сирена')",
@@ -237,7 +237,7 @@
         "unit": "компл.",
         "quantity": "100",
         "consumer": "Moscow",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Засекречивающая аппаратура Р-755 ('Ландыш')",
@@ -245,7 +245,7 @@
         "unit": "компл.",
         "quantity": "20",
         "consumer": "Moscow",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Минные защитники М3-26",

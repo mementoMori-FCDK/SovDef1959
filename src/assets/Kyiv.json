@@ -405,7 +405,7 @@
         "unit": "комплект",
         "quantity": "200",
         "consumer": "Moscow",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Самолетные радиолокационные бомбардировочные прицелы РПБ-3 (ПСБН-МА)",
@@ -429,7 +429,7 @@
         "unit": "компл.",
         "quantity": "510",
         "consumer": "RU",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Самолетные радиолокационне станции помех СПС-2 ('Натрий')",
@@ -437,7 +437,7 @@
         "unit": "компл.",
         "quantity": "360",
         "consumer": "RU",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Самолетные радиолокационные приборы 'Сирена-2' и 'Сирена-3'",
@@ -445,7 +445,7 @@
         "unit": "компл.",
         "quantity": "2000",
         "consumer": "Moscow",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Самолетные радиолокационные приборы 'Сирена-2' и 'Сирена-3'",
@@ -453,7 +453,7 @@
         "unit": "компл.",
         "quantity": "200",
         "consumer": "UZB",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Самолетные радиолокационные приборы 'Сирена-2' и 'Сирена-3'",
@@ -461,7 +461,7 @@
         "unit": "компл.",
         "quantity": "300",
         "consumer": "GA",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Самолетные радиолокационные приборы 'Сирена-2' и 'Сирена-3'",
@@ -469,7 +469,7 @@
         "unit": "компл.",
         "quantity": "7325",
         "consumer": "RU",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Самолетные радиолокационные приборы 'Сирена-2' и 'Сирена-3'",
@@ -477,7 +477,7 @@
         "unit": "компл.",
         "quantity": "175",
         "consumer": "Kharkiv",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Самолетные ответчики СОД-57",
@@ -485,7 +485,7 @@
         "unit": "компл.",
         "quantity": "500",
         "consumer": "Moscow",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Самолетные ответчики СОД-57",
@@ -493,7 +493,7 @@
         "unit": "компл.",
         "quantity": "300",
         "consumer": "GA",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Самолетные ответчики СОД-57",
@@ -501,7 +501,7 @@
         "unit": "компл.",
         "quantity": "200",
         "consumer": "Kharkiv",
-        "type": "radio/radars"
+        "type": "radio&radars"
     },
     {
         "item": "Радиогидроакустические буи типа РГБ-Н",
@@ -509,7 +509,7 @@
         "unit": "компл.",
         "quantity": "10000",
         "consumer": "Moscow",
-        "type": "ships/naval forces"
+        "type": "ships&naval forces"
     },
     {
         "item": "Рейдовые тральщики",
@@ -517,7 +517,7 @@
         "unit": "штук",
         "quantity": "1",
         "consumer": "Moscow",
-        "type": "ships/naval forces"
+        "type": "ships&naval forces"
     },
     {
         "item": "Электроакустические взрыватели 'Краб'",
@@ -525,7 +525,7 @@
         "unit": "штук",
         "quantity": "3500",
         "consumer": "Moscow",
-        "type": "ships/naval forces"
+        "type": "ships&naval forces"
     },
     {
         "item": "Быстроходные акустические отводители кораблей БОКА",
@@ -533,7 +533,7 @@
         "unit": "штук",
         "quantity": "750",
         "consumer": "Moscow",
-        "type": "ships/naval forces"
+        "type": "ships&naval forces"
     },
     {
         "item": "Корпуса 57мм осколочно-трассирующих снарядов к пушкам С-60",
@@ -661,7 +661,7 @@
         "unit": "штук",
         "quantity": "800",
         "consumer": "Moscow",
-        "type": "ships/naval forces"
+        "type": "ships&naval forces"
     },
     {
         "item": "Екскаваторы роторные траншейные ЭТР-152",
@@ -733,7 +733,7 @@
         "unit": "штук",
         "quantity": "1",
         "consumer": "inbound",
-        "type": "ships/naval forces"
+        "type": "ships&naval forces"
     },
     {
         "item": "Авиаприцелы АСП-4Н",

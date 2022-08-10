@@ -5,10 +5,12 @@ import loaders from "./loaders.js"
 import chartResources from "./pieChart";
 import * as d3 from "d3";
 import img from "./assets/scheme.png";
+import resources from './iconLayer.js';
 
 //unpack imports
 const {LoadRegions, LoadProduction} = loaders;
 const {DrawPieChart, DestroyChart} = chartResources;
+const {GenerateLayer} = resources;
 
 /**
  * jquery selectors
@@ -58,19 +60,12 @@ var tiles = L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{
   attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-var icon = L.divIcon({
-  html: `<div style='display: flex'>
-          <img src='transport.svg' width='30px' height='30px'/>
-          <img src='transport.svg' width='30px' height='30px'/>
-          <img src='weapons.svg' width='30px' height='30px'/>
-        </div>`,
-  iconSize: [100, 30],
-  iconAnchor: [50,30],
-  popupAnchor: [-3, -76],
-});
-
-var marker = L.marker([50.44351305245805,30.51967620849609], {icon: icon})
-.addTo(map);
+////////////////////////////////////////////////////////////////
+let iconLayer = L.featureGroup();
+iconLayer = await GenerateLayer()
+.then(data => iconLayer = data).catch(error => console.log(error));
+iconLayer.addTo(map);
+////////////////////////////////////////////////////////////////
 
 /**
  * returns region info string
