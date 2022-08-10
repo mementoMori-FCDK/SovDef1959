@@ -103,7 +103,9 @@ function onClickHandler(e, prodRegion) {
 }
 
 function DestroyChart() {
-  pieChart.destroy();
+  if(pieChart !== undefined) {
+    pieChart.destroy();
+  }
 }
 
 const resourses = {

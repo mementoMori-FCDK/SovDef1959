@@ -2,19 +2,20 @@ import loaders from './loaders';
 
 const {GenerateInfo} = loaders;
 
-let iconWidth = '30px';
-let iconHeight = '30px';
+let iconWidth = '25px';
+let iconHeight = '25px';
 
 const producers = {
     "Kyiv": [50.450001, 30.523333],
-    "Odesa": [46.482952,  30.712481],
-    "Dnipro": [48.450001, 34.983334],
-    "Donets'k": [48.002777, 37.805279],
-    "Kharkiv": [49.988358, 36.232845],
-    "Luhans'k": [48.574041, 39.307815],
+    "Odesa": [46.4405856,  29.0831283],
+    "Dnipro": [48.566921, 34.1118983],
+    "Donets'k": [47.9278479, 38.8021476],
+    "Kharkiv": [49.7952095, 36.5920395],
+    "Luhans'k": [48.966163, 39.001870],
     "Lviv": [49.842957, 24.031111],
     "Vinnytsia": [49.233083, 28.468217],
-    "Zaporizhia": [47.8388, 35.139567]
+    "Zaporizhia": [47.8388, 35.139567],
+    "Kherson": [47.0660367, 33.209167]
 };
 
 let prodTypesByProducer = {};

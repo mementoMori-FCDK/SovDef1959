@@ -61,7 +61,7 @@ var tiles = L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{
 }).addTo(map);
 
 ////////////////////////////////////////////////////////////////
-let iconLayer = L.featureGroup();
+let iconLayer = undefined;
 iconLayer = await GenerateLayer()
 .then(data => iconLayer = data).catch(error => console.log(error));
 iconLayer.addTo(map);
