@@ -4,12 +4,14 @@ const {GenerateInfo} = loaders;
 
 let iconWidth = '25px';
 let iconHeight = '25px';
+let iconWidthLow = '15px';
+let iconHeightLow = '15px';
 
 const producers = {
     "Kyiv": [50.450001, 30.523333],
     "Odesa": [46.4405856,  29.0831283],
     "Dnipro": [48.566921, 34.1118983],
-    "Donets'k": [47.9278479, 38.8021476],
+    "Donets'k": [47.9257046, 38.1957157],
     "Kharkiv": [49.7952095, 36.5920395],
     "Luhans'k": [48.966163, 39.001870],
     "Lviv": [49.842957, 24.031111],
@@ -37,26 +39,39 @@ function FormHtml(typesArr) {
     return html;
 };
 
-function GenerateMarker(producer) {
-    let typesArr  = prodTypesByProducer[producer];
-    //create leaflet icon
-    let icon = L.divIcon({
-        html: FormHtml(typesArr),
-        iconSize: [typesArr.lenght * iconWidth, iconHeight],
-        iconAnchor: [(typesArr.lenght * iconWidth)/2, iconHeight]
-    });
+function FormHtmlLow() {
+    return `<div style='display: flex'><img src='zoom.svg' width=${iconWidthLow} height=${iconHeightLow}/></div>`;
+}
 
+function GenerateMarker(producer, lowZoom) {
+    let typesArr  = prodTypesByProducer[producer];
+    let icon = undefined;
+    //create leaflet icon
+    if(!lowZoom) {
+        icon = L.divIcon({
+            html: FormHtml(typesArr),
+            iconSize: [typesArr.lenght * iconWidth, iconHeight],
+            iconAnchor: [(typesArr.lenght * iconWidth)/2, iconHeight]
+        });
+    } else {
+        icon = L.divIcon({
+            html: FormHtmlLow(),
+            iconSize: [iconWidth, iconHeight],
+            iconAnchor: [iconWidth/2, iconHeight]
+        })
+    }
     let lat = producers[producer][0];
     let long = producers[producer][1];
     let marker = L.marker([lat, long], {icon: icon});
     return marker;
 }
 
-async function GenerateLayer() {
+async function GenerateLayer(lowZoom) {
     await GenerateProductionTypes();
     let markers = [];
     Object.keys(producers).forEach(producer => {
-        markers.push(GenerateMarker(producer));
+        markers.push(lowZoom ?
+            GenerateMarker(producer, true) : GenerateMarker(producer, false))
     });
     let iconLayer = L.featureGroup(markers);
     return iconLayer;

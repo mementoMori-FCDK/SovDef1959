@@ -21,15 +21,15 @@ let $resList = $('#res-list');
 let $listElement = $('.list-element');
 let $chart = $('.producer-chart');
 let $colorScheme = $('.colorScheme');
-//setup scheme image source
-let $schemeImg = $('.schemeImg');
+let $schemeImg = $('.schemeImg');         //scheme image source
 $schemeImg.attr('src', img);
 
 //array to filter the highlighted regions
 const producers = ["Kyiv", "Odesa", "Lviv", "Dnipro", "Zaporizhia", "Kherson", "Vinnytsia", "Donets'k", "Luhans'k", "Kharkiv"];
 // cuurent consumers highlighted
-const center = [49.98964246591577, 36.23222351074219];
+const center = [49.065783, 33.410033];
 let currentLayer = undefined;
+//regions hover styles (default and hover)
 let defaultStyle = {
   fillColor: '#87ceeb',
   color: 'skyblue',
@@ -40,6 +40,11 @@ let hoverStyle = {
   color: 'orange',
   fillOpacity: 0.5
 };
+
+//track low zoom level
+let lowZoom = false;
+//icon layer variable
+let iconLayer = undefined;
 
 //for accets import
 const cache = {};
@@ -52,20 +57,41 @@ importAll(require.context('./assets/', true, /\.json$/));
 importAll(require.context('./assets/', true, /\.svg$/));
 
 var map = L.map('map', {
-  zoomControl: false
-}).setView(center, 5);
+  zoomControl: false,
+  minZoom: 4
+}).setView(center, 6);
+
+//initialize iconLayer
+iconLayer = await GenerateLayer(false)
+.then(data => iconLayer = data).catch(error => console.log(error));
+iconLayer.addTo(map);
+
+//change iconLayer on zoomend event
+map.on('zoomend', async () => {
+  if(map.getZoom() <= 5) {
+    if (!lowZoom) {
+      lowZoom = true;
+      iconLayer.remove();
+      iconLayer = await GenerateLayer(lowZoom)
+      .then(data => iconLayer = data).catch(error => console.log(error));
+      iconLayer.addTo(map);
+    }
+  }
+  if (map.getZoom() > 5) {
+    if(lowZoom) {
+      lowZoom = false;
+      iconLayer.remove();
+      iconLayer = await GenerateLayer(lowZoom)
+      .then(data => iconLayer = data).catch(error => console.log(error));
+      iconLayer.addTo(map);
+    }
+  }
+});
 
 var tiles = L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png', {
   maxZoom: 19,
   attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
 }).addTo(map);
-
-////////////////////////////////////////////////////////////////
-let iconLayer = undefined;
-iconLayer = await GenerateLayer()
-.then(data => iconLayer = data).catch(error => console.log(error));
-iconLayer.addTo(map);
-////////////////////////////////////////////////////////////////
 
 /**
  * returns region info string
@@ -297,7 +323,7 @@ const resetView = () => {
     BaseLayerClickHandler(e.target.innerText);
   });
 
-  map.flyTo(center, 5, {
+  map.flyTo(center, 6, {
     animate: true,
     duration: 0.5
   });
