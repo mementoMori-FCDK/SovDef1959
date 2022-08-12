@@ -10,7 +10,7 @@ import resources from './iconLayer.js';
 //unpack imports
 const {LoadRegions, LoadProduction} = loaders;
 const {DrawPieChart, DestroyChart} = chartResources;
-const {GenerateLayer} = resources;
+const {GenerateLayer, LoadTypes} = resources;
 
 /**
  * jquery selectors
@@ -60,6 +60,8 @@ var map = L.map('map', {
   zoomControl: false,
   minZoom: 4
 }).setView(center, 6);
+
+LoadTypes();
 
 //initialize iconLayer
 iconLayer = await GenerateLayer(false)

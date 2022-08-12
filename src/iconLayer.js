@@ -21,6 +21,17 @@ const producers = {
 };
 
 let prodTypesByProducer = {};
+let productionTypes = new Set();
+
+async function LoadTypes() {
+    await Promise.all(Object.keys(producers).map(async (producer) => {
+        let dict = await GenerateInfo(producer)
+        .then(data => dict = data).catch(error => console.log(error));
+        Object.keys(dict).forEach(type => productionTypes.add(type));
+    })); 
+    console.log(productionTypes);
+    return productionTypes;
+}
 
 async function GenerateProductionTypes() {
     await Promise.all(Object.keys(producers).map(async (producer) => {
@@ -78,7 +89,8 @@ async function GenerateLayer(lowZoom) {
 }
 
 const resources = {
-    GenerateLayer
+    GenerateLayer,
+    LoadTypes
 };
 
 export default resources;
