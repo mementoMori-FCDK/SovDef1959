@@ -29,8 +29,25 @@ async function LoadTypes() {
         .then(data => dict = data).catch(error => console.log(error));
         Object.keys(dict).forEach(type => productionTypes.add(type));
     })); 
-    console.log(productionTypes);
     return productionTypes;
+}
+
+async function GenerateLegendOverlay() {
+    await LoadTypes();
+    let column = $('#right');
+    let iconHtml = '';
+    let iconNames = Array.from(productionTypes);
+    let counter = 0;
+    iconNames.forEach((iconName) => {
+        if(counter === iconNames.length/2){
+            column = $('#left');
+            counter = 0;
+        }
+        iconHtml = `<div><img src='${iconName}.svg' width=${iconWidth} height=${iconHeight}/> 
+        - ${iconName}</div>`
+        column.append(iconHtml);
+        counter++;
+    });
 }
 
 async function GenerateProductionTypes() {
@@ -90,7 +107,8 @@ async function GenerateLayer(lowZoom) {
 
 const resources = {
     GenerateLayer,
-    LoadTypes
+    LoadTypes,
+    GenerateLegendOverlay
 };
 
 export default resources;
