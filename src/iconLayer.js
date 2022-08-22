@@ -28,7 +28,7 @@ async function LoadTypes() {
         let dict = await GenerateInfo(producer)
         .then(data => dict = data).catch(error => console.log(error));
         Object.keys(dict).forEach(type => productionTypes.add(type));
-    })); 
+    }));
     return productionTypes;
 }
 
@@ -54,9 +54,21 @@ async function GenerateProductionTypes() {
     await Promise.all(Object.keys(producers).map(async (producer) => {
         let dict = await GenerateInfo(producer)
         .then(data => dict = data).catch(error => console.log(error));
-        prodTypesByProducer[producer] = Object.keys(dict);
+        let dictValues = Object.values(dict);
+        dictValues = dictValues.sort((a, b) => {return b - a}).slice(0, 2);
+        let prod1, prod2;
+        prod1 = Object.keys(dict).find(function(key){
+            return dict[key] === dictValues[0];
+        });
+        if (dictValues.length > 1) {
+            prod2 = Object.keys(dict).find(function(key){
+                return dict[key] === dictValues[1];
+            });
+        }
+    prodTypesByProducer[producer] = prod2 ? [prod1, prod2] : [prod1];
+        console.log(prodTypesByProducer[producer]);
     }));
-};
+}
 
 function FormHtml(typesArr) {
     let html = "<div style='display: flex'>"
@@ -94,6 +106,7 @@ function GenerateMarker(producer, lowZoom) {
     return marker;
 }
 
+//creates divIcon layer
 async function GenerateLayer(lowZoom) {
     await GenerateProductionTypes();
     let markers = [];
