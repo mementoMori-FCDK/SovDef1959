@@ -1,7 +1,7 @@
 import "./style.css";
 import "./reset.css";
 import "./assets/map.geojson";
-import loaders from "./loaders.js"
+import loaders from "./loaders.js";
 import chartResources from "./pieChart";
 import * as d3 from "d3";
 import img from "./assets/scheme.png";
@@ -10,7 +10,7 @@ import resources from './iconLayer.js';
 //unpack imports
 const {LoadRegions, LoadProduction} = loaders;
 const {DrawPieChart, DestroyChart} = chartResources;
-const {GenerateLayer, LoadTypes, GenerateLegendOverlay} = resources;
+const {GenerateLayer, GenerateLegendOverlay} = resources;
 
 /**
  * jquery selectors
