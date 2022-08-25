@@ -26,8 +26,8 @@ $schemeImg.attr('src', img);
 
 //array to filter the highlighted regions
 const producers = ["Kyiv", "Odesa", "Lviv", "Dnipro", "Zaporizhia", "Kherson", "Vinnytsia", "Donets'k", "Luhans'k", "Kharkiv"];
-// cuurent consumers highlighted
 const center = [49.065783, 33.410033];
+// current consumers highlighted layer
 let currentLayer = undefined;
 //regions hover styles (default and hover)
 let defaultStyle = {
@@ -56,19 +56,21 @@ function importAll(r) {
 importAll(require.context('./assets/', true, /\.json$/));
 importAll(require.context('./assets/', true, /\.svg$/));
 
+// leaflet map variable
 var map = L.map('map', {
   zoomControl: false,
   minZoom: 4
 }).setView(center, 6);
 
-GenerateLegendOverlay();
+GenerateLegendOverlay();                                              //generate legend overlay
 
 //initialize iconLayer
 iconLayer = await GenerateLayer(false)
 .then(data => iconLayer = data).catch(error => console.log(error));
 iconLayer.addTo(map);
 
-//change iconLayer on zoomend event
+//change iconLayer on zoomend event (form zoomed to optimized)
+//optimize on zoom lvl > 5
 map.on('zoomend', async () => {
   if(map.getZoom() <= 5) {
     if (!lowZoom) {
@@ -90,6 +92,7 @@ map.on('zoomend', async () => {
   }
 });
 
+//load tyles and add attribution
 var tiles = L.tileLayer('https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png', {
   maxZoom: 19,
   attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
@@ -108,6 +111,12 @@ const setRegionInfo = (feature) => {
   }
 };
 
+/**
+ * creates list of features currently available for the given layer
+ * specifies moseover and moselout event handlers for base/consumers layers
+ * @param {*} feature - element to add to dropdown
+ * @param {*} base - variable to track current layer (base/consumers)
+ */
 const setDropdown = (feature, base) => {
   if(base){
     if(producers.includes(feature.properties.name)) {
@@ -163,6 +172,10 @@ const setDropdown = (feature, base) => {
   }
 };
 
+/**
+ *  click handler for the base layer
+ * @param {*} regionName - name of the slected region
+ */
 async function BaseLayerClickHandler(regionName) {
   if(producers.includes(regionName)) {
     $welcome.hide();
@@ -173,6 +186,8 @@ async function BaseLayerClickHandler(regionName) {
   }
 };
 
+//loads regions borders from the geoJSON file
+//set up event listeners, style modifiers
 let regionsJSON = await LoadRegions().then(data => regionsJSON = data);
 export let regionsLayer = L.geoJSON(regionsJSON, {
   style: defaultStyle,
@@ -193,6 +208,12 @@ export let regionsLayer = L.geoJSON(regionsJSON, {
   
 }).addTo(map);
 
+/**
+ * 
+ * @param {*} prodArray - aray of production types 
+ * @param {*} region - selected region
+ * @returns colors dictionary for each production type
+ */
 function CalculateConsumerWeight(prodArray, region) {
   let dict = {};
   //calculate the number of entries
@@ -237,7 +258,7 @@ function ConsumerStyle (consumerName, dict) {
 };
 
 /**
- * 
+ * switches base layer with the specified consumer layer
  * @param {String} region 
  * @returns a promise
  */
@@ -331,6 +352,9 @@ const resetView = () => {
   });
 };
 
+/**
+ * clears the table content
+ */
 function TableClearContent() {
   //delete generated rows
   let $header = $('.header');
